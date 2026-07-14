@@ -208,7 +208,7 @@ h4{font-weight:700;font-size:18px}
 
 /* ---------- Checklist tips (11) ---------- */
 .tip{display:flex;gap:12px;align-items:flex-start}
-.tip svg{width:18px;height:18px;stroke:var(--vg-gold);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;flex:0 0 18px;margin-top:4px}
+.tip svg{width:18px;height:18px;color:var(--vg-gold);stroke:var(--vg-gold);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;flex:0 0 18px;margin-top:4px}
 
 /* ---------- Value icons (06, gold line icons) ---------- */
 .vicon{width:36px;height:36px;fill:none;stroke:var(--vg-gold);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;margin-bottom:16px;display:block}
@@ -274,7 +274,7 @@ h4{font-weight:700;font-size:18px}
 .sec-light .logos .lg{border:1px solid #E2DED2}
 .sec-light .rail::-webkit-scrollbar-thumb{background:#D8D3C4}
 .sec-light .rule{background:linear-gradient(90deg,var(--vg-gold-deep),transparent)}
-.sec-light .vicon,.sec-light .tip svg{stroke:var(--vg-gold-deep)}
+.sec-light .vicon,.sec-light .tip svg{stroke:var(--vg-gold-deep);color:var(--vg-gold-deep)}
 
 /* ---------- Carousel (CSS scroll snap = TRX swiper) ---------- */
 .rail{display:grid;grid-auto-flow:column;grid-auto-columns:31.5%;gap:26px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:14px}
