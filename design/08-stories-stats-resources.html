@@ -1,0 +1,166 @@
+<!doctype html>
+<!-- ================================================================
+08 STORIES / STATS / RESOURCES · Veteran Games Website 2.0 · desktop 1440
+Filterable grid. Production: WP posts + categories (News/Stories, Stats/Research,
+Resources/Tips) rendered with TRX Addons blogger widget + post filters (AJAX).
+Prototype filter runs on data-cat attributes via js/vg.js.
+All card copy is NEW, in brand voice, flagged for review.
+
+SWAP LIST (remote → local when supplied)
+  Card images → assets/img/general/stories/
+================================================================= -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1440">
+<title>Stories, Stats & Resources · Veteran Games</title>
+<link rel="stylesheet" href="css/vg.css">
+</head>
+<body>
+
+<!-- [Slipstream] Header (shared, see 01) -->
+<header class="hdr">
+  <div class="hdr-in">
+    <a class="logo" href="01-home.html"><img src="https://veterangames.com/wp-content/uploads/2023/04/vg-logo-100x85.png" alt="Veteran Games"></a>
+    <ul class="nav">
+      <li><a href="01-home.html">Home</a></li>
+      <li><a href="02-find-my-event.html">Find My Event</a>
+        <div class="sub"><a href="02-find-my-event.html#compete">Compete</a><a href="02-find-my-event.html#spectate">Spectate</a></div></li>
+      <li><a href="03-the-experience.html">The Experience</a></li>
+      <li><a href="04-our-purpose.html">Our Purpose</a></li>
+      <li><a href="05-our-sponsors.html">Show Your Support</a>
+        <div class="sub"><a href="06-become-a-sponsor.html">Become a Sponsor</a><a href="07-donate.html">Donate</a><a href="05-our-sponsors.html">Our Sponsors</a></div></li>
+      <li class="on"><a href="08-stories-stats-resources.html">Stories/Stats/Resources</a></li>
+      <li><a href="09-shop.html">Shop</a></li>
+      <li><a href="10-contact.html">Contact</a></li>
+    </ul>
+    <a class="btn btn-gold btn-sm" href="02-find-my-event.html">Register Now</a>
+  </div>
+</header>
+
+<!-- [Slipstream] Page hero -->
+<section class="hero hero-page" style="min-height:360px">
+  <img class="hero-img" src="https://veterangames.com/wp-content/uploads/2026/02/KRUS8958_websize-1024x683.jpg" alt="">
+  <div class="wrap flag">
+    <span class="kicker">News & Media</span>
+    <h1>Stories. Stats.<br><span class="gold">Resources.</span></h1>
+    <p class="hero-sub">The wins, the evidence and the tools. Everything the community needs, in one place.</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+
+    <!-- [Slipstream] Filter: TRX Addons post filters (AJAX) + WP search. Prototype: data-filter tabs -->
+    <div class="filter">
+      <div class="tabs">
+        <button class="tab on" data-filter="all">All</button>
+        <button class="tab" data-filter="news">News / Stories</button>
+        <button class="tab" data-filter="stats">Stats / Research</button>
+        <button class="tab" data-filter="resources">Resources / Tips</button>
+      </div>
+      <input type="text" placeholder="Search articles" style="margin-left:auto">
+    </div>
+
+    <!-- [Slipstream] Posts grid: TRX blogger widget, 3 col, category badge + Read More. Card copy NEW, flagged -->
+    <div class="grid g3 flag">
+      <article class="card" data-cat="news">
+        <img class="card-img" src="https://veterangames.com/wp-content/uploads/2026/02/KRUS9094_websize-1024x683.jpg" alt="2025 champions">
+        <div class="card-bd"><span class="badge badge-line">News / Stories</span><h4>Brisbane Veterans RLFC take the 2025 title</h4><p class="meta">Veteran Games · October 2025</p><a class="btn btn-line btn-sm" href="#">Read More</a></div>
+      </article>
+      <article class="card" data-cat="news">
+        <img class="card-img" src="https://veterangames.com/wp-content/uploads/2026/02/LitlCreative_VeteranGamesDarwin-364-1024x683.jpg" alt="Darwin heats">
+        <div class="card-bd"><span class="badge badge-line">News / Stories</span><h4>5/7 RAR conquer the Top End in Darwin</h4><p class="meta">Veteran Games · 2025</p><a class="btn btn-line btn-sm" href="#">Read More</a></div>
+      </article>
+      <article class="card" data-cat="news">
+        <img class="card-img" src="https://veterangames.com/wp-content/uploads/2026/02/KRUS0047_websize-1024x683.jpg" alt="UK expansion">
+        <div class="card-bd"><span class="badge badge-line">News / Stories</span><h4>The Games go global: UK expedition announced</h4><p class="meta">Veteran Games · 2026</p><a class="btn btn-line btn-sm" href="#">Read More</a></div>
+      </article>
+      <article class="card" data-cat="stats">
+        <img class="card-img" src="https://veterangames.com/wp-content/uploads/2023/10/Veteran-Games-2023-Fit-test-2.jpeg" alt="Mental health data">
+        <div class="card-bd"><span class="badge badge-line">Stats / Research</span><h4>Veteran mental health: what the data tells us</h4><p class="meta">Research summary · 2026</p><a class="btn btn-line btn-sm" href="#">Read More</a></div>
+      </article>
+      <article class="card" data-cat="stats">
+        <img class="card-img" src="https://veterangames.com/wp-content/uploads/2024/10/KRUS1348-2-2-1024x683.jpg" alt="Teamwork research">
+        <div class="card-bd"><span class="badge badge-line">Stats / Research</span><h4>Why connection is protective: the evidence</h4><p class="meta">Research summary · 2026</p><a class="btn btn-line btn-sm" href="#">Read More</a></div>
+      </article>
+      <article class="card" data-cat="stats">
+        <img class="card-img" src="https://veterangames.com/wp-content/uploads/2026/02/KRUS9023_websize-1024x683.jpg" alt="Royal Commission">
+        <div class="card-bd"><span class="badge badge-line">Stats / Research</span><h4>Royal Commission findings, in plain language</h4><p class="meta">Explainer · 2026</p><a class="btn btn-line btn-sm" href="#">Read More</a></div>
+      </article>
+      <article class="card" data-cat="resources">
+        <img class="card-img" src="https://veterangames.com/wp-content/uploads/2026/07/team-wall.jpg" alt="Training plan">
+        <div class="card-bd"><span class="badge badge-line">Resources / Tips</span><h4>Ten weeks out: how to train for the Games</h4><p class="meta">Training guide · 2026</p><a class="btn btn-line btn-sm" href="#">Read More</a></div>
+      </article>
+      <article class="card" data-cat="resources">
+        <img class="card-img" src="https://veterangames.com/wp-content/uploads/2023/10/Veteran-Games-2023-Med-good-5.jpeg" alt="First aid basics">
+        <div class="card-bd"><span class="badge badge-line">Resources / Tips</span><h4>First aid fundamentals: tourniquets to splints</h4><p class="meta">Skills refresher · 2026</p><a class="btn btn-line btn-sm" href="#">Read More</a></div>
+      </article>
+      <article class="card" data-cat="resources">
+        <img class="card-img" src="https://veterangames.com/wp-content/uploads/2024/10/Swim_Saturday_17082024_@JGRimages-30-1-1024x683.jpg" alt="Swim prep">
+        <div class="card-bd"><span class="badge badge-line">Resources / Tips</span><h4>Swimming in clothes: prepare for the Water Course</h4><p class="meta">Training guide · 2026</p><a class="btn btn-line btn-sm" href="#">Read More</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- [Slipstream] Support CTA band -->
+<section class="cta-band">
+  <div class="wrap cta-in">
+    <div class="flag">
+      <span class="kicker">Part Of The Story?</span>
+      <h2>Share Yours With The Community</h2>
+    </div>
+    <a class="btn btn-gold" href="10-contact.html">Get In Touch</a>
+  </div>
+</section>
+
+<!-- [Slipstream] Footer (shared, see 01) -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-main">
+      <div>
+        <a class="logo" href="01-home.html"><img src="https://veterangames.com/wp-content/uploads/2020/05/veteran-footer-logo.png" alt="Veteran Games"></a>
+        <p class="meta">A Veteran Support Force initiative.<br>By Veterans. For Veterans.</p>
+        <div class="soc">
+          <a href="https://www.instagram.com/veterangames_/" aria-label="Instagram">IG</a>
+          <a href="https://facebook.com/veteran.games.vsf" aria-label="Facebook">FB</a>
+          <a href="https://www.youtube.com/@veterangames" aria-label="YouTube">YT</a>
+          <a href="https://www.linkedin.com/company/veteransupportforce/" aria-label="LinkedIn">LI</a>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="02-find-my-event.html">Find My Event</a></li>
+          <li><a href="03-the-experience.html">The Experience</a></li>
+          <li><a href="04-our-purpose.html">Our Purpose</a></li>
+          <li><a href="06-become-a-sponsor.html">Become a Sponsor</a></li>
+          <li><a href="07-donate.html">Donate</a></li>
+          <li><a href="09-shop.html">Shop</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get On The List</h4>
+        <p>Be the first to get notified of event updates, key information and exclusive opportunities.</p>
+        <form class="news-form">
+          <input type="text" placeholder="First name" aria-label="First name">
+          <input type="email" placeholder="Email address" aria-label="Email">
+          <button class="btn btn-gold btn-sm" type="button">Send</button>
+        </form>
+      </div>
+    </div>
+    <div class="ftr-legal">
+      <span><a href="https://vsf.org.au/">© Veteran Support Force Ltd.</a></span>
+      <span>
+        <a href="https://veterangames.com/privacy/">Privacy Policy</a> ·
+        <a href="https://veterangames.com/privacy-collection-statement/">Privacy Collection Statement</a> ·
+        <a href="https://veterangames.com/terms-and-conditions/">Terms + Conditions</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/vg.js"></script>
+</body>
+</html>
