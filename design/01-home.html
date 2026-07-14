@@ -6,7 +6,7 @@ Slipstream (ThemeREX) dark skin · Elementor · TEC · TRX Addons
 SWAP LIST (remote → local when supplied)
   https://veterangames.com/wp-content/uploads/2023/04/vg-logo-100x85.png            → assets/logos/vg-logo.png
   https://veterangames.com/wp-content/uploads/2020/05/veteran-footer-logo.png       → assets/logos/vg-footer-logo.png
-  https://veterangames.com/wp-content/uploads/2026/02/KRUS8836_websize-1024x683.jpg → assets/img/hero/home-hero-poster.jpg
+  Hero poster: LOCAL assets/img/hero/home-hero-poster.jpg (Drive: LitlCreative_VeteranGames_Day1-80)
   assets/video/hero-loop.mp4 (TO SUPPLY: 10 to 20s muted loop from 2025 highlights)
   12x media logos /2023/05 + /2023/10                                               → assets/logos/media/
   8x partner logos (strip, bottom)                                                  → assets/logos/sponsors/
@@ -47,7 +47,8 @@ SWAP LIST (remote → local when supplied)
 
 <!-- [Slipstream] Hero: Elementor section, background video (self hosted mp4) + overlay · heading + dual buttons -->
 <section class="hero">
-  <video autoplay muted loop playsinline poster="https://veterangames.com/wp-content/uploads/2026/02/KRUS8836_websize-1024x683.jpg">
+  <!-- Poster: drop your sourced image at assets/img/hero/home-hero-poster.jpg and it appears here -->
+  <video autoplay muted loop playsinline poster="../assets/img/hero/home-hero-poster.jpg">
     <source src="../assets/video/hero-loop.mp4" type="video/mp4">
   </video>
   <div class="wrap">
@@ -60,10 +61,10 @@ SWAP LIST (remote → local when supplied)
       <a class="btn btn-gold" href="02-find-my-event.html">Find Your Next Event</a>
       <a class="btn btn-white" href="04-our-purpose.html">Our Purpose</a>
     </div>
-    <!-- [Slipstream] Presenting sponsor lockup: Elementor text + image inline. CSS invert renders the logo white on dark. Legally required early placement -->
+    <!-- [Slipstream] Presenting sponsor lockup: Elementor text + image inline. logo on white plate (source png has baked white bg). Legally required early placement -->
     <div style="display:flex;align-items:center;gap:16px;margin-top:40px">
       <span style="font-weight:600;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--vg-grey)">Presented By</span>
-      <a href="https://www.veteransfirstconsulting.com/" target="_blank" rel="noopener"><img src="https://veterangames.com/wp-content/uploads/2025/05/VFC-Original-Logo-9000-x-9000-px1-150x150.png" alt="Veterans First Consulting" style="height:58px;filter:brightness(0) invert(1);opacity:.92"></a>
+      <a href="https://www.veteransfirstconsulting.com/" target="_blank" rel="noopener" style="width:62px;height:62px;overflow:hidden;display:inline-flex;align-items:center;justify-content:center"><img src="https://veterangames.com/wp-content/uploads/2025/05/VFC-Original-Logo-9000-x-9000-px1-150x150.png" alt="Veterans First Consulting" style="width:84px;height:84px;max-width:none;flex-shrink:0"></a>
     </div>
   </div>
 </section>
@@ -107,7 +108,7 @@ SWAP LIST (remote → local when supplied)
         </div>
       </article>
       <article class="card">
-        <img class="card-img" src="https://veterangames.com/wp-content/uploads/2026/02/LitlCreative_VeteranGamesDarwin-791-2-1024x683.jpg" alt="Darwin Heats">
+        <img class="card-img" src="../assets/img/events/darwin.jpg" alt="Darwin Heats">
         <div class="card-bd">
           <h3>Darwin Heats</h3>
           <p class="meta">September 18 · Darwin NT</p>
@@ -115,7 +116,7 @@ SWAP LIST (remote → local when supplied)
         </div>
       </article>
       <article class="card">
-        <img class="card-img" src="https://veterangames.com/wp-content/uploads/2026/02/KRUS9598_websize-1024x683.jpg" alt="National Finals Sunshine Coast">
+        <img class="card-img" src="https://veterangames.com/wp-content/uploads/2025/10/Website-Image-1-1024x892.jpg" alt="National Finals Sunshine Coast">
         <div class="card-bd">
           <h3>National Finals</h3>
           <p class="meta">October 24 & 25 · Sunshine Coast Stadium QLD</p>
@@ -137,7 +138,7 @@ SWAP LIST (remote → local when supplied)
 <!-- [Slipstream] Founder trust piece: Elementor split section, video lightbox poster + text. Video TO SUPPLY (see videos.md) -->
 <section class="sec">
   <div class="wrap split">
-    <div class="poster"><img src="https://veterangames.com/wp-content/uploads/2023/10/Veteran-Games-2023-Great-Group.jpeg" alt="Founder message video placeholder"><span class="play"></span></div>
+    <div class="poster"><img src="../assets/img/general/founder-poster.jpg" alt="Founder message video placeholder"><span class="play"></span></div>
     <div>
       <span class="kicker">Why We Exist</span>
       <h2>Built From Service.<br><span class="gold">Backed By Purpose.</span></h2>
@@ -256,22 +257,22 @@ SWAP LIST (remote → local when supplied)
       </div>
     </div>
     <div class="logos logos-rail logos-clean">
-      <span class="lg lg-sq"><img src="https://veterangames.com/wp-content/uploads/2025/05/VFC-Original-Logo-9000-x-9000-px1-150x150.png" alt="Veterans First Consulting"></span>
-      <span class="lg lg-sq"><img style="height:96px" src="https://veterangames.com/wp-content/uploads/2025/08/Untitled-design12-1024x1024.png" alt="Valhalla Tactical & Outdoor"></span>
+      <span class="lg"><img src="https://veterangames.com/wp-content/uploads/2025/05/VFC-Original-Logo-9000-x-9000-px1-150x150.png" alt="Veterans First Consulting"></span>
+      <span class="lg"><img src="https://veterangames.com/wp-content/uploads/2025/08/Untitled-design12-1024x1024.png" alt="Valhalla Tactical & Outdoor"></span>
       <span class="lg"><img src="https://veterangames.com/wp-content/uploads/2025/08/High-Sierra-Primary-Logo-Midnight-scaled3-1024x507.png" alt="High Sierra"></span>
-      <span class="lg lg-sq"><img src="https://veterangames.com/wp-content/uploads/2025/03/Savvy-logo-socials-1-1024x1024.png" alt="Savvy Beverages"></span>
-      <span class="lg lg-pad"><img src="https://veterangames.com/wp-content/uploads/2025/06/AMB_Logo_Full_Colour_Padding-scaled-1-1024x382.png" alt="Australian Military Bank"></span>
-      <span class="lg lg-crop"><img style="width:220px" src="https://veterangames.com/wp-content/uploads/2025/09/Copy-of-CMBT_Logo-no-tagline_black-1-1024x1024.png" alt="CMBT"></span>
+      <span class="lg"><img src="https://veterangames.com/wp-content/uploads/2025/03/Savvy-logo-socials-1-1024x1024.png" alt="Savvy Beverages"></span>
+      <span class="lg"><img src="https://veterangames.com/wp-content/uploads/2025/06/AMB_Logo_Full_Colour_Padding-scaled-1-1024x382.png" alt="Australian Military Bank"></span>
+      <span class="lg"><img src="https://veterangames.com/wp-content/uploads/2025/09/Copy-of-CMBT_Logo-no-tagline_black-1-1024x1024.png" alt="CMBT"></span>
       <span class="lg"><img src="https://veterangames.com/wp-content/uploads/2026/06/Family-First-Care-Logo-CMYK_Pos-1024x431.jpg" alt="Medi Skills Institute"></span>
-      <span class="lg lg-min"><img src="https://veterangames.com/wp-content/uploads/2026/02/Life_Savers_Logo_Stripes_CMYK-1-1024x690.jpg" alt="Lifesavers"></span>
-      <span class="lg lg-crop"><img style="width:220px" src="https://veterangames.com/wp-content/uploads/2025/05/sponsor-tiles-122-1024x1024.png" alt="Ringwood RSL"></span>
-      <span class="lg lg-crop"><img src="https://veterangames.com/wp-content/uploads/2023/07/Veteran-Games-Axon.jpg" alt="AXON Property Group"></span>
-      <span class="lg lg-sq"><img src="https://veterangames.com/wp-content/uploads/2026/05/Greenbank-Services-Club-Logo-Suite_STACK_MONO-1-1-1024x979.jpg" alt="Greenbank Services Club"></span>
-      <span class="lg lg-crop"><img style="width:220px" src="https://veterangames.com/wp-content/uploads/2025/03/FYL-square-logo-1-1024x1024.png" alt="Fuel Your Life"></span>
+      <span class="lg"><img src="https://veterangames.com/wp-content/uploads/2026/02/Life_Savers_Logo_Stripes_CMYK-1-1024x690.jpg" alt="Lifesavers"></span>
+      <span class="lg"><img src="https://veterangames.com/wp-content/uploads/2025/05/sponsor-tiles-122-1024x1024.png" alt="Ringwood RSL"></span>
+      <span class="lg"><img src="https://veterangames.com/wp-content/uploads/2023/07/Veteran-Games-Axon.jpg" alt="AXON Property Group"></span>
+      <span class="lg"><img src="https://veterangames.com/wp-content/uploads/2026/05/Greenbank-Services-Club-Logo-Suite_STACK_MONO-1-1-1024x979.jpg" alt="Greenbank Services Club"></span>
+      <span class="lg"><img src="https://veterangames.com/wp-content/uploads/2025/03/FYL-square-logo-1-1024x1024.png" alt="Fuel Your Life"></span>
       <span class="lg"><img src="https://veterangames.com/wp-content/uploads/2026/04/Good_Joint_Tagline_Stacked_DRK_Accent.png" alt="The Good Joint"></span>
-      <span class="lg lg-sq"><img src="https://veterangames.com/wp-content/uploads/2026/05/scan-to-book_edited.avif" alt="Inside Out Active Recovery"></span>
-      <span class="lg lg-sq"><img src="https://veterangames.com/wp-content/uploads/2026/05/image-1.png" alt="Eildon RSL Sub Branch"></span>
-      <span class="lg lg-sq"><img src="https://veterangames.com/wp-content/uploads/2026/06/Jericho-Black-1.png" alt="Jericho"></span>
+      <span class="lg"><img src="https://veterangames.com/wp-content/uploads/2026/05/scan-to-book_edited.avif" alt="Inside Out Active Recovery"></span>
+      <span class="lg"><img src="https://veterangames.com/wp-content/uploads/2026/05/image-1.png" alt="Eildon RSL Sub Branch"></span>
+      <span class="lg"><img src="https://veterangames.com/wp-content/uploads/2026/06/Jericho-Black-1.png" alt="Jericho"></span>
     </div>
   </div>
 </section>
