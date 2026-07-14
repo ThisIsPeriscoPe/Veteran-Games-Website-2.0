@@ -23,13 +23,12 @@ SWAP LIST (remote → local when supplied)
     <a class="logo" href="01-home.html"><img src="https://veterangames.com/wp-content/uploads/2023/04/vg-logo-100x85.png" alt="Veteran Games"></a>
     <ul class="nav">
       <li><a href="01-home.html">Home</a></li>
-      <li><a href="02-find-my-event.html">Find My Event</a>
-        <div class="sub"><a href="02-find-my-event.html#compete">Compete</a><a href="02-find-my-event.html#spectate">Spectate</a></div></li>
+      <li><a href="02-find-my-event.html">Find My Event</a></li>
       <li><a href="03-the-experience.html">The Experience</a></li>
       <li><a href="04-our-purpose.html">Our Purpose</a></li>
       <li class="on"><a href="05-our-sponsors.html">Show Your Support</a>
         <div class="sub"><a href="06-become-a-sponsor.html">Become a Sponsor</a><a href="07-donate.html">Donate</a><a href="05-our-sponsors.html">Our Sponsors</a></div></li>
-      <li><a href="08-stories-stats-resources.html">Stories/Stats/Resources</a></li>
+      <li><a href="08-stories-stats-resources.html">News & Media</a></li>
       <li><a href="09-shop.html">Shop</a></li>
       <li><a href="10-contact.html">Contact</a></li>
     </ul>
@@ -38,21 +37,21 @@ SWAP LIST (remote → local when supplied)
 </header>
 
 <!-- [Slipstream] Donate hero + Donorbox TOP: Elementor split section + HTML embed widget (approved custom arrangement) -->
-<section class="sec" id="donorbox-top" style="padding-top:72px">
+<section class="sec sec-light" id="donorbox-top" style="padding-top:72px">
   <div class="wrap split">
     <div>
       <span class="kicker">Donate</span>
       <h1 style="font-size:60px">Contribute To<br><span class="gold">The Cause</span></h1>
       <div class="rule"></div>
       <p class="lead">All donations made are tax deductible and go directly towards delivering the Veteran Games and supporting our Veteran community.</p>
-      <div style="margin-top:30px;background:var(--vg-panel);border:1px solid var(--vg-line);border-left:4px solid var(--vg-gold);padding:26px">
+      <div class="info-tile" style="margin-top:30px;padding:26px">
         <h4 style="margin-bottom:10px">Donations By Bank Transfer</h4>
         <p class="meta">Veteran Support Force LTD<br>BSB: 082 902 · Account: 340886792</p>
         <p class="meta" style="margin-top:10px">Email <a href="mailto:hello@vsf.org.au">hello@vsf.org.au</a> for a tax receipt. Thank you for taking action to show your support.</p>
       </div>
     </div>
     <!-- [Slipstream] Donorbox iframe embed · production: paste embed in Elementor HTML widget -->
-    <div style="background:var(--vg-panel);border:1px solid var(--vg-line);padding:10px">
+    <div style="background:#fff;border:1px solid #E2DED2;padding:10px">
       <iframe src="https://donorbox.org/embed/veterangames" name="donorbox" title="Donate to Veteran Games" style="width:100%;min-height:640px;border:0" allowpaymentrequest></iframe>
     </div>
   </div>
@@ -61,7 +60,7 @@ SWAP LIST (remote → local when supplied)
 <!-- [Slipstream] Why donate: Elementor section + TRX counters. Stats copy: live About page -->
 <section class="sec sec-coal sec-angle">
   <div class="wrap">
-    <div class="flag">
+    <div>
       <span class="kicker">Why Donate</span>
       <h2>Your Support Changes Outcomes</h2>
       <p style="max-width:760px;margin-top:16px">More than 1,500 Australian Veterans have been lost to suicide in two decades. The Veteran Games exists to change that trajectory through connection, purpose and fitness. Your donation keeps entry costs low, teams on the start line and the movement growing.</p>
@@ -74,8 +73,32 @@ SWAP LIST (remote → local when supplied)
   </div>
 </section>
 
+<!-- [Slipstream] Stats and research: WP posts grid (TRX blogger), category Stats/Research -->
+<section class="sec sec-coal">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="kicker">The Evidence</span><h2>Stats & Research</h2></div>
+      <a class="btn btn-line btn-sm" href="08-stories-stats-resources.html">See All</a>
+    </div>
+    <div class="grid g3">
+      <article class="card">
+        <img class="card-img" src="https://veterangames.com/wp-content/uploads/2023/10/Veteran-Games-2023-Fit-test-2.jpeg" alt="Veteran mental health research">
+        <div class="card-bd"><span class="badge">Stats / Research</span><h4>Veteran mental health: what the data tells us</h4><p class="meta">Research summary · 2026</p><a class="btn btn-line btn-sm" href="08-stories-stats-resources.html">Read More</a></div>
+      </article>
+      <article class="card">
+        <img class="card-img" src="https://veterangames.com/wp-content/uploads/2024/10/KRUS1348-2-2-1024x683.jpg" alt="Benefits of teamwork">
+        <div class="card-bd"><span class="badge">Stats / Research</span><h4>The benefits of teamwork and connection</h4><p class="meta">Research summary · 2026</p><a class="btn btn-line btn-sm" href="08-stories-stats-resources.html">Read More</a></div>
+      </article>
+      <article class="card">
+        <img class="card-img" src="https://veterangames.com/wp-content/uploads/2026/02/KRUS9023_websize-1024x683.jpg" alt="Royal Commission findings">
+        <div class="card-bd"><span class="badge">Stats / Research</span><h4>Royal Commission findings, in plain language</h4><p class="meta">Explainer · 2026</p><a class="btn btn-line btn-sm" href="08-stories-stats-resources.html">Read More</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <!-- [Slipstream] Testimonials: Elementor video posters, 3 up. Videos TO SUPPLY (videos.md) -->
-<section class="sec">
+<section class="sec sec-light">
   <div class="wrap">
     <span class="kicker">What People Are Saying</span>
     <h2 style="margin-bottom:40px">Hear It From The Competitors</h2>
@@ -87,42 +110,16 @@ SWAP LIST (remote → local when supplied)
   </div>
 </section>
 
-<!-- [Slipstream] Stats and research: WP posts grid (TRX blogger), category Stats/Research -->
-<section class="sec sec-coal">
-  <div class="wrap">
-    <div class="sec-head">
-      <div><span class="kicker">The Evidence</span><h2>Stats & Research</h2></div>
-      <a class="btn btn-line" href="08-stories-stats-resources.html">See All</a>
-    </div>
-    <div class="grid g3">
-      <article class="card">
-        <img class="card-img" src="https://veterangames.com/wp-content/uploads/2023/10/Veteran-Games-2023-Fit-test-2.jpeg" alt="Veteran mental health research">
-        <div class="card-bd"><span class="badge badge-line">Stats / Research</span><h4>Veteran mental health: what the data tells us</h4><p class="meta">Research summary · 2026</p><a class="btn btn-line btn-sm" href="08-stories-stats-resources.html">Read More</a></div>
-      </article>
-      <article class="card">
-        <img class="card-img" src="https://veterangames.com/wp-content/uploads/2024/10/KRUS1348-2-2-1024x683.jpg" alt="Benefits of teamwork">
-        <div class="card-bd"><span class="badge badge-line">Stats / Research</span><h4>The benefits of teamwork and connection</h4><p class="meta">Research summary · 2026</p><a class="btn btn-line btn-sm" href="08-stories-stats-resources.html">Read More</a></div>
-      </article>
-      <article class="card">
-        <img class="card-img" src="https://veterangames.com/wp-content/uploads/2026/02/KRUS9023_websize-1024x683.jpg" alt="Royal Commission findings">
-        <div class="card-bd"><span class="badge badge-line">Stats / Research</span><h4>Royal Commission findings, in plain language</h4><p class="meta">Explainer · 2026</p><a class="btn btn-line btn-sm" href="08-stories-stats-resources.html">Read More</a></div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- [Slipstream] Donorbox BOTTOM repeat: Elementor CTA band + HTML embed (approved custom arrangement) -->
-<section class="sec" id="donorbox-bottom">
-  <div class="wrap split">
-    <div class="flag">
+<!-- [Slipstream] Closing CTA: Elementor section, gold scheme · Donate anchors to top Donorbox -->
+<section class="cta-band cta-gold">
+  <div class="wrap cta-in">
+    <div style="max-width:640px">
       <span class="kicker">Ready When You Are</span>
-      <h2>Every Dollar Puts A<br>Veteran On The Start Line</h2>
-      <div class="rule"></div>
-      <p>Set up a one off gift or a monthly contribution. It takes less than a minute and every cent stays with the cause.</p>
-      <p style="margin-top:22px"><a class="btn btn-line" href="06-become-a-sponsor.html">Or Become a Sponsor</a></p>
-    </div>
-    <div style="background:var(--vg-panel);border:1px solid var(--vg-line);padding:10px">
-      <iframe src="https://donorbox.org/embed/veterangames" name="donorbox2" title="Donate to Veteran Games" style="width:100%;min-height:640px;border:0" allowpaymentrequest></iframe>
+      <h2>Every Dollar Puts A Veteran<br>On The Start Line</h2>
+      <div class="btn-row" style="margin-top:26px">
+        <a class="btn btn-gold" href="#donorbox-top">Donate Now</a>
+        <a class="btn btn-line" href="06-become-a-sponsor.html">Or Become a Sponsor</a>
+      </div>
     </div>
   </div>
 </section>
@@ -135,10 +132,10 @@ SWAP LIST (remote → local when supplied)
         <a class="logo" href="01-home.html"><img src="https://veterangames.com/wp-content/uploads/2020/05/veteran-footer-logo.png" alt="Veteran Games"></a>
         <p class="meta">A Veteran Support Force initiative.<br>By Veterans. For Veterans.</p>
         <div class="soc">
-          <a href="https://www.instagram.com/veterangames_/" aria-label="Instagram">IG</a>
-          <a href="https://facebook.com/veteran.games.vsf" aria-label="Facebook">FB</a>
-          <a href="https://www.youtube.com/@veterangames" aria-label="YouTube">YT</a>
-          <a href="https://www.linkedin.com/company/veteransupportforce/" aria-label="LinkedIn">LI</a>
+          <a href="https://www.instagram.com/veterangames_/" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.4" fill="currentColor"/></svg></a>
+          <a href="https://facebook.com/veteran.games.vsf" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.6 22v-8.1h2.7l.4-3.2h-3.1V8.7c0-.9.3-1.6 1.6-1.6h1.7V4.3c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.2H7.5v3.2h2.7V22z"/></svg></a>
+          <a href="https://www.youtube.com/@veterangames" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="1.5" y="5" width="21" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M10 9.2l5.4 2.8L10 14.8z"/></svg></a>
+          <a href="https://www.linkedin.com/company/veteransupportforce/" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.9 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM3.2 9h3.4v11.5H3.2zM9.2 9h3.3v1.6h.1c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.4v6.4h-3.4v-5.7c0-1.4 0-3.1-1.9-3.1s-2.2 1.5-2.2 3v5.8H9.2z"/></svg></a>
         </div>
       </div>
       <div>

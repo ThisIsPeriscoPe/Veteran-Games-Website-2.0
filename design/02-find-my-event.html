@@ -24,13 +24,12 @@ SWAP LIST (remote → local when supplied)
     <a class="logo" href="01-home.html"><img src="https://veterangames.com/wp-content/uploads/2023/04/vg-logo-100x85.png" alt="Veteran Games"></a>
     <ul class="nav">
       <li><a href="01-home.html">Home</a></li>
-      <li class="on"><a href="02-find-my-event.html">Find My Event</a>
-        <div class="sub"><a href="#compete">Compete</a><a href="#spectate">Spectate</a></div></li>
+      <li class="on"><a href="02-find-my-event.html">Find My Event</a></li>
       <li><a href="03-the-experience.html">The Experience</a></li>
       <li><a href="04-our-purpose.html">Our Purpose</a></li>
       <li><a href="05-our-sponsors.html">Show Your Support</a>
         <div class="sub"><a href="06-become-a-sponsor.html">Become a Sponsor</a><a href="07-donate.html">Donate</a><a href="05-our-sponsors.html">Our Sponsors</a></div></li>
-      <li><a href="08-stories-stats-resources.html">Stories/Stats/Resources</a></li>
+      <li><a href="08-stories-stats-resources.html">News & Media</a></li>
       <li><a href="09-shop.html">Shop</a></li>
       <li><a href="10-contact.html">Contact</a></li>
     </ul>
@@ -41,88 +40,84 @@ SWAP LIST (remote → local when supplied)
 <!-- [Slipstream] Page hero: Elementor section, background image + overlay -->
 <section class="hero hero-page">
   <img class="hero-img" src="https://veterangames.com/wp-content/uploads/2026/02/KRUS9192_websize-1024x683.jpg" alt="">
-  <div class="wrap flag">
+  <div class="wrap">
     <span class="kicker">2026 Series Calendar</span>
     <h1>Find My <span class="gold">Event</span></h1>
     <p class="hero-sub">Compete as a team of 10 or back them from the sideline. Pick your city and lock it in.</p>
   </div>
 </section>
 
-<section class="sec" id="compete">
+<section class="sec sec-light" id="compete">
   <div class="wrap">
 
     <!-- [Slipstream] Filter bar: TEC events bar (date, venue) + TRX select filters. Static UI in prototype -->
-    <div class="filter">
+    <div class="filter" id="spectate">
       <div><label>Date range</label><br><select><option>All 2026</option><option>July</option><option>August</option><option>September</option><option>October</option></select></div>
       <div><label>Location</label><br><select><option>All locations</option><option>QLD</option><option>NSW</option><option>NT</option><option>United Kingdom</option></select></div>
-      <div id="spectate"><label>Participation</label><br><select><option>Any</option><option>Compete</option><option>Spectate</option></select></div>
       <div style="flex:1"><label>Search</label><br><input type="text" placeholder="Search events"></div>
     </div>
 
     <!-- [Slipstream] TEC events list view · one row per tribe_events post · CTA column = approved custom arrangement -->
     <div class="ev-row">
-      <div class="ev-date"><span>Aug</span><b>15</b><span>& 16</span></div>
+      <div class="ev-date"><span>Aug</span><b class="range">15 & 16</b><span>Sat & Sun</span></div>
       <div>
-        <span class="badge">Heats · Open to public</span>
+        <span class="badge">Open to the public</span>
         <h3 style="margin:10px 0 6px">Manly Beach Heats</h3>
         <p class="meta">Manly Beach, Sydney NSW · Veterans and public divisions</p>
         <p style="margin-top:8px">The Games hit Sydney's Northern Beaches. Sand, surf and a course that shows no mercy.</p>
       </div>
       <div class="ev-cta">
-        <a class="btn btn-gold btn-sm" href="https://veterangames.com/manly-2026/" target="_blank" rel="noopener">Register · Race Roster</a>
-        <a class="btn btn-line btn-sm" href="https://veterangames.com/manly-2026/" target="_blank" rel="noopener">Spectate Free · Eventbrite</a>
+        <a class="btn btn-gold btn-sm" href="https://veterangames.com/manly-2026/" target="_blank" rel="noopener">Register Team</a>
+        <a class="btn btn-line btn-sm" href="https://veterangames.com/manly-2026/" target="_blank" rel="noopener">Spectate Free</a>
         <a class="btn btn-white btn-sm" href="11-event-info.html">Event Info</a>
       </div>
     </div>
 
     <div class="ev-row">
-      <div class="ev-date"><span>Sep</span><b>18</b><span>Fri</span></div>
+      <div class="ev-date"><span>Sep</span><b>18</b><span>Friday</span></div>
       <div>
-        <span class="badge">Heats</span>
         <h3 style="margin:10px 0 6px">Darwin Heats</h3>
         <p class="meta">Darwin NT · Current and former serving personnel</p>
         <p style="margin-top:8px">The Games return to the Top End. Bring your unit, your mates and your best time.</p>
       </div>
       <div class="ev-cta">
-        <a class="btn btn-gold btn-sm" href="https://veterangames.com/darwin-2026/" target="_blank" rel="noopener">Register · Race Roster</a>
-        <a class="btn btn-line btn-sm" href="https://veterangames.com/darwin-2026/" target="_blank" rel="noopener">Spectate Free · Eventbrite</a>
+        <a class="btn btn-gold btn-sm" href="https://veterangames.com/darwin-2026/" target="_blank" rel="noopener">Register Team</a>
+        <a class="btn btn-line btn-sm" href="https://veterangames.com/darwin-2026/" target="_blank" rel="noopener">Spectate Free</a>
         <a class="btn btn-white btn-sm" href="11-event-info.html">Event Info</a>
       </div>
     </div>
 
     <div class="ev-row">
-      <div class="ev-date"><span>Oct</span><b>24</b><span>& 25</span></div>
+      <div class="ev-date"><span>Oct</span><b class="range">24 & 25</b><span>Sat & Sun</span></div>
       <div>
-        <span class="badge badge-line">National Finals</span>
         <h3 style="margin:10px 0 6px">Veteran Games National Finals</h3>
         <p class="meta">Sunshine Coast Stadium, Bokarina QLD · 25 team cap · Early bird from $100pp</p>
         <p style="margin-top:8px">The pinnacle of the 2026 series. Teams from across Australia battle it out to become the 2026 Champions.</p>
       </div>
       <div class="ev-cta">
-        <a class="btn btn-gold btn-sm" href="https://raceroster.com/events/2026/129729/veteran-games-national-finals-2026" target="_blank" rel="noopener">Register · Race Roster</a>
-        <a class="btn btn-line btn-sm" href="https://www.eventbrite.com/e/veteran-games-national-finals-2026-tickets-1992395086337" target="_blank" rel="noopener">Spectate Free · Eventbrite</a>
+        <a class="btn btn-gold btn-sm" href="https://raceroster.com/events/2026/129729/veteran-games-national-finals-2026" target="_blank" rel="noopener">Register Team</a>
+        <a class="btn btn-line btn-sm" href="https://www.eventbrite.com/e/veteran-games-national-finals-2026-tickets-1992395086337" target="_blank" rel="noopener">Spectate Free</a>
         <a class="btn btn-white btn-sm" href="11-event-info.html">Event Info</a>
       </div>
     </div>
 
     <div class="ev-row">
-      <div class="ev-date"><span>Jul</span><b>25</b><span>Sat</span></div>
+      <div class="ev-date"><span>Jul</span><b>25</b><span>Saturday</span></div>
       <div>
-        <span class="badge badge-line">International</span>
         <h3 style="margin:10px 0 6px">UK Expedition Event</h3>
         <p class="meta">United Kingdom · In partnership with Veterans Can</p>
         <p style="margin-top:8px">A special expedition event marking the first international expansion of the Veteran Games.</p>
       </div>
       <div class="ev-cta">
-        <a class="btn btn-gold btn-sm" href="https://veterans-can.com/veteran-games-uk" target="_blank" rel="noopener">More Info · Veterans Can</a>
+        <a class="btn btn-gold btn-sm" href="https://veterans-can.com/veteran-games-uk" target="_blank" rel="noopener">More Info</a>
         <a class="btn btn-white btn-sm" href="11-event-info.html">Event Info</a>
       </div>
     </div>
 
     <div class="ev-row past">
-      <div class="ev-date"><span>Jun</span><b>20</b><span>& 21</span></div>
+      <div class="ev-date"><span>Jun</span><b class="range">20 & 21</b><span>Sat & Sun</span></div>
       <div>
-        <span class="badge badge-line">Completed</span>
+        <span class="badge">Completed</span>
         <h3 style="margin:10px 0 6px">Gold Coast Heats</h3>
         <p class="meta">Gold Coast QLD · First heats of 2026, selected events open to the public</p>
       </div>
@@ -136,9 +131,9 @@ SWAP LIST (remote → local when supplied)
 </section>
 
 <!-- [Slipstream] EOI CTA band: Elementor section + button -->
-<section class="cta-band">
+<section class="cta-band cta-gold">
   <div class="wrap cta-in">
-    <div class="flag">
+    <div>
       <span class="kicker">Not Ready To Commit?</span>
       <h2>Register Your Interest For 2026</h2>
     </div>
@@ -154,10 +149,10 @@ SWAP LIST (remote → local when supplied)
         <a class="logo" href="01-home.html"><img src="https://veterangames.com/wp-content/uploads/2020/05/veteran-footer-logo.png" alt="Veteran Games"></a>
         <p class="meta">A Veteran Support Force initiative.<br>By Veterans. For Veterans.</p>
         <div class="soc">
-          <a href="https://www.instagram.com/veterangames_/" aria-label="Instagram">IG</a>
-          <a href="https://facebook.com/veteran.games.vsf" aria-label="Facebook">FB</a>
-          <a href="https://www.youtube.com/@veterangames" aria-label="YouTube">YT</a>
-          <a href="https://www.linkedin.com/company/veteransupportforce/" aria-label="LinkedIn">LI</a>
+          <a href="https://www.instagram.com/veterangames_/" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.4" fill="currentColor"/></svg></a>
+          <a href="https://facebook.com/veteran.games.vsf" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.6 22v-8.1h2.7l.4-3.2h-3.1V8.7c0-.9.3-1.6 1.6-1.6h1.7V4.3c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.2H7.5v3.2h2.7V22z"/></svg></a>
+          <a href="https://www.youtube.com/@veterangames" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="1.5" y="5" width="21" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M10 9.2l5.4 2.8L10 14.8z"/></svg></a>
+          <a href="https://www.linkedin.com/company/veteransupportforce/" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.9 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM3.2 9h3.4v11.5H3.2zM9.2 9h3.3v1.6h.1c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.4v6.4h-3.4v-5.7c0-1.4 0-3.1-1.9-3.1s-2.2 1.5-2.2 3v5.8H9.2z"/></svg></a>
         </div>
       </div>
       <div>

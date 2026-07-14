@@ -7,6 +7,9 @@ SWAP LIST (remote → local when supplied)
   Hero image → assets/img/hero/purpose-hero.jpg
   Timeline images → assets/img/events/
   YouTube embeds per videos.md (2023 doc, 2024 doc, 2025 GC + Darwin highlights)
+  NOTE: sponsor/media logos are live site files with mixed padding + baked
+  backgrounds. Blend modes normalise them for the prototype. For production,
+  supply a cropped transparent PNG logo set → assets/logos/sponsors/ + /media/
 ================================================================= -->
 <html lang="en">
 <head>
@@ -23,13 +26,12 @@ SWAP LIST (remote → local when supplied)
     <a class="logo" href="01-home.html"><img src="https://veterangames.com/wp-content/uploads/2023/04/vg-logo-100x85.png" alt="Veteran Games"></a>
     <ul class="nav">
       <li><a href="01-home.html">Home</a></li>
-      <li><a href="02-find-my-event.html">Find My Event</a>
-        <div class="sub"><a href="02-find-my-event.html#compete">Compete</a><a href="02-find-my-event.html#spectate">Spectate</a></div></li>
+      <li><a href="02-find-my-event.html">Find My Event</a></li>
       <li><a href="03-the-experience.html">The Experience</a></li>
       <li class="on"><a href="04-our-purpose.html">Our Purpose</a></li>
       <li><a href="05-our-sponsors.html">Show Your Support</a>
         <div class="sub"><a href="06-become-a-sponsor.html">Become a Sponsor</a><a href="07-donate.html">Donate</a><a href="05-our-sponsors.html">Our Sponsors</a></div></li>
-      <li><a href="08-stories-stats-resources.html">Stories/Stats/Resources</a></li>
+      <li><a href="08-stories-stats-resources.html">News & Media</a></li>
       <li><a href="09-shop.html">Shop</a></li>
       <li><a href="10-contact.html">Contact</a></li>
     </ul>
@@ -47,7 +49,7 @@ SWAP LIST (remote → local when supplied)
 </section>
 
 <!-- [Slipstream] The what and why: Elementor split text section. Copy: live About page -->
-<section class="sec">
+<section class="sec sec-light">
   <div class="wrap split">
     <div>
       <span class="kicker">The What And Why</span>
@@ -56,10 +58,10 @@ SWAP LIST (remote → local when supplied)
       <p class="lead">The Veteran Games is a proactive health initiative designed to address key findings from the Royal Commission into Defence and Veteran Suicide, and key failings within the existing Veteran support systems.</p>
       <p style="margin-top:16px">Our focus is on improving physical and mental fitness outcomes for Veterans, while working to shape a positive contemporary Veteran narrative through showcasing this excellence in an exciting and engaging competition format.</p>
       <p style="margin-top:16px">We do this with the vision of creating a positive, long term and measurable impact on the lives of all current and future Veterans, their families and the broader Australian community.</p>
-      <p style="margin-top:28px">
+      <div class="btn-row" style="margin-top:28px">
         <a class="btn btn-gold" href="07-donate.html">Contribute To The Cause</a>
-        <a class="btn btn-line" style="margin-left:12px" href="08-stories-stats-resources.html">See The Stats & Research</a>
-      </p>
+        <a class="btn btn-line" href="08-stories-stats-resources.html">See The Stats & Research</a>
+      </div>
     </div>
     <div>
       <img src="https://veterangames.com/wp-content/uploads/2023/10/Veteran-Games-2023-Take-Up-The-Challenge.jpeg" alt="Take up the challenge" style="border:1px solid var(--vg-line)">
@@ -86,7 +88,7 @@ SWAP LIST (remote → local when supplied)
 </section>
 
 <!-- [Slipstream] History timeline: Elementor / TRX Addons timeline or stacked split sections + video widgets -->
-<section class="sec">
+<section class="sec sec-light">
   <div class="wrap">
     <span class="kicker">History Of The Veteran Games</span>
     <h2 style="margin-bottom:60px">Three Years. One Movement.</h2>
@@ -127,38 +129,48 @@ SWAP LIST (remote → local when supplied)
 </section>
 
 <!-- [Slipstream] Next steps: Elementor CTA band + dual buttons -->
-<section class="cta-band">
+<section class="cta-band cta-gold">
   <div class="wrap cta-in">
-    <div class="flag">
+    <div style="max-width:600px">
       <span class="kicker">2026 Is Calling</span>
       <h2>Be Part Of The Next Chapter</h2>
+      <p style="margin-top:16px">Four events, one national title. Whether you compete or cheer from the sideline, 2026 needs you on the ground.</p>
+      <div class="btn-row" style="margin-top:26px">
+        <a class="btn btn-gold" href="02-find-my-event.html">Our Upcoming Events</a>
+        <a class="btn btn-line" href="08-stories-stats-resources.html">Featured Stories</a>
+      </div>
     </div>
-    <div>
-      <a class="btn btn-gold" href="02-find-my-event.html">Our Upcoming Events</a>
-      <a class="btn btn-line" href="08-stories-stats-resources.html">Featured Stories</a>
-    </div>
+    <img src="https://veterangames.com/wp-content/uploads/2026/02/KRUS8785_websize-1024x683.jpg" alt="Veteran Games competitors" style="width:420px;border:1px solid rgba(19,19,21,.3)">
   </div>
 </section>
 
 <!-- [Slipstream] Sponsors strip: TRX partners grid -->
-<section class="sec" style="padding:64px 0">
+<section class="sec sec-light" style="padding:64px 0">
   <div class="wrap">
     <div class="sec-head" style="margin-bottom:34px">
       <div><span class="kicker">Our Sponsors & Partners</span></div>
-      <div>
+      <div class="btn-row">
         <a class="btn btn-line btn-sm" href="05-our-sponsors.html">See All Sponsors</a>
-        <a class="btn btn-gold btn-sm" style="margin-left:10px" href="06-become-a-sponsor.html">Become a Sponsor</a>
+        <a class="btn btn-gold btn-sm" href="06-become-a-sponsor.html">Become a Sponsor</a>
       </div>
     </div>
-    <div class="logos">
-      <span class="lg"><img src="https://veterangames.com/wp-content/uploads/2025/05/VFC-Original-Logo-9000-x-9000-px1-150x150.png" alt="Veterans First Consulting"></span>
-      <span class="lg"><img src="https://veterangames.com/wp-content/uploads/2025/08/Untitled-design12-1024x1024.png" alt="Valhalla Tactical & Outdoor"></span>
+    <div class="logos logos-rail logos-clean">
+      <span class="lg lg-sq"><img src="https://veterangames.com/wp-content/uploads/2025/05/VFC-Original-Logo-9000-x-9000-px1-150x150.png" alt="Veterans First Consulting"></span>
+      <span class="lg lg-sq"><img style="height:96px" src="https://veterangames.com/wp-content/uploads/2025/08/Untitled-design12-1024x1024.png" alt="Valhalla Tactical & Outdoor"></span>
       <span class="lg"><img src="https://veterangames.com/wp-content/uploads/2025/08/High-Sierra-Primary-Logo-Midnight-scaled3-1024x507.png" alt="High Sierra"></span>
-      <span class="lg"><img src="https://veterangames.com/wp-content/uploads/2025/03/Savvy-logo-socials-1-1024x1024.png" alt="Savvy Beverages"></span>
-      <span class="lg"><img src="https://veterangames.com/wp-content/uploads/2025/06/AMB_Logo_Full_Colour_Padding-scaled-1-1024x382.png" alt="Australian Military Bank"></span>
-      <span class="lg"><img src="https://veterangames.com/wp-content/uploads/2025/09/Copy-of-CMBT_Logo-no-tagline_black-1-1024x1024.png" alt="CMBT"></span>
-      <span class="lg"><img src="https://veterangames.com/wp-content/uploads/2026/02/Life_Savers_Logo_Stripes_CMYK-1-1024x690.jpg" alt="Lifesavers"></span>
-      <span class="lg"><img src="https://veterangames.com/wp-content/uploads/2026/06/Jericho-Black-1.png" alt="Jericho"></span>
+      <span class="lg lg-sq"><img src="https://veterangames.com/wp-content/uploads/2025/03/Savvy-logo-socials-1-1024x1024.png" alt="Savvy Beverages"></span>
+      <span class="lg lg-pad"><img src="https://veterangames.com/wp-content/uploads/2025/06/AMB_Logo_Full_Colour_Padding-scaled-1-1024x382.png" alt="Australian Military Bank"></span>
+      <span class="lg lg-crop"><img style="width:220px" src="https://veterangames.com/wp-content/uploads/2025/09/Copy-of-CMBT_Logo-no-tagline_black-1-1024x1024.png" alt="CMBT"></span>
+      <span class="lg"><img src="https://veterangames.com/wp-content/uploads/2026/06/Family-First-Care-Logo-CMYK_Pos-1024x431.jpg" alt="Medi Skills Institute"></span>
+      <span class="lg lg-min"><img src="https://veterangames.com/wp-content/uploads/2026/02/Life_Savers_Logo_Stripes_CMYK-1-1024x690.jpg" alt="Lifesavers"></span>
+      <span class="lg lg-crop"><img style="width:220px" src="https://veterangames.com/wp-content/uploads/2025/05/sponsor-tiles-122-1024x1024.png" alt="Ringwood RSL"></span>
+      <span class="lg lg-crop"><img src="https://veterangames.com/wp-content/uploads/2023/07/Veteran-Games-Axon.jpg" alt="AXON Property Group"></span>
+      <span class="lg lg-sq"><img src="https://veterangames.com/wp-content/uploads/2026/05/Greenbank-Services-Club-Logo-Suite_STACK_MONO-1-1-1024x979.jpg" alt="Greenbank Services Club"></span>
+      <span class="lg lg-crop"><img style="width:220px" src="https://veterangames.com/wp-content/uploads/2025/03/FYL-square-logo-1-1024x1024.png" alt="Fuel Your Life"></span>
+      <span class="lg"><img src="https://veterangames.com/wp-content/uploads/2026/04/Good_Joint_Tagline_Stacked_DRK_Accent.png" alt="The Good Joint"></span>
+      <span class="lg lg-sq"><img src="https://veterangames.com/wp-content/uploads/2026/05/scan-to-book_edited.avif" alt="Inside Out Active Recovery"></span>
+      <span class="lg lg-sq"><img src="https://veterangames.com/wp-content/uploads/2026/05/image-1.png" alt="Eildon RSL Sub Branch"></span>
+      <span class="lg lg-sq"><img src="https://veterangames.com/wp-content/uploads/2026/06/Jericho-Black-1.png" alt="Jericho"></span>
     </div>
   </div>
 </section>
@@ -171,10 +183,10 @@ SWAP LIST (remote → local when supplied)
         <a class="logo" href="01-home.html"><img src="https://veterangames.com/wp-content/uploads/2020/05/veteran-footer-logo.png" alt="Veteran Games"></a>
         <p class="meta">A Veteran Support Force initiative.<br>By Veterans. For Veterans.</p>
         <div class="soc">
-          <a href="https://www.instagram.com/veterangames_/" aria-label="Instagram">IG</a>
-          <a href="https://facebook.com/veteran.games.vsf" aria-label="Facebook">FB</a>
-          <a href="https://www.youtube.com/@veterangames" aria-label="YouTube">YT</a>
-          <a href="https://www.linkedin.com/company/veteransupportforce/" aria-label="LinkedIn">LI</a>
+          <a href="https://www.instagram.com/veterangames_/" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.4" fill="currentColor"/></svg></a>
+          <a href="https://facebook.com/veteran.games.vsf" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.6 22v-8.1h2.7l.4-3.2h-3.1V8.7c0-.9.3-1.6 1.6-1.6h1.7V4.3c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.2H7.5v3.2h2.7V22z"/></svg></a>
+          <a href="https://www.youtube.com/@veterangames" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="1.5" y="5" width="21" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M10 9.2l5.4 2.8L10 14.8z"/></svg></a>
+          <a href="https://www.linkedin.com/company/veteransupportforce/" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.9 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM3.2 9h3.4v11.5H3.2zM9.2 9h3.3v1.6h.1c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.4v6.4h-3.4v-5.7c0-1.4 0-3.1-1.9-3.1s-2.2 1.5-2.2 3v5.8H9.2z"/></svg></a>
         </div>
       </div>
       <div>
