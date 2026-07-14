@@ -1,17 +1,17 @@
 <!doctype html>
 <!-- ================================================================
-11 EVENT INFO TEMPLATE · Veteran Games Website 2.0 · desktop 1440
+11 EVENT INFO TEMPLATE · Veteran Games Website 2.0 · desktop 1440 · v2
 Populated with: National Finals · Sunshine Coast · October 24 & 25 2026.
 Production: TEC single event template (tribe_events) built as Elementor
 theme template. Compete/Spectate cards + ticketing CTAs = APPROVED CUSTOM
 ARRANGEMENT of native widgets.
-Copy source: veterangames.com/sunshine-coast-2026 (live) + brand voice (flagged).
+Copy source: veterangames.com/sunshine-coast-2026 (live) + brand voice.
 
 SWAP LIST (remote → local when supplied)
   Hype video: YouTube 2025 highlights placeholder until 2026 hype cut → videos.md
   https://veterangames.com/wp-content/uploads/2026/07/team-wall.jpg → assets/img/events/finals-team-wall.jpg
   https://veterangames.com/wp-content/uploads/2026/07/veterangames__1781926357_3923403441600422054_58357533481.jpg → assets/img/events/finals-crowd.jpg
-  Obstacle images (see 03)
+  Obstacle images (see 03) · Sponsor logos: cropped transparent PNG set → assets/logos/sponsors/
 ================================================================= -->
 <html lang="en">
 <head>
@@ -41,17 +41,21 @@ SWAP LIST (remote → local when supplied)
   </div>
 </header>
 
-<!-- [Slipstream] Event hype video hero: Elementor video widget over dark section -->
+<!-- [Slipstream] Event hype hero: Elementor section + video widget. Presenting sponsor lockup = image + text inline, CSS inverted white -->
 <section class="sec" style="padding-top:64px;padding-bottom:64px">
   <div class="wrap">
-    <div style="display:flex;align-items:end;justify-content:space-between;gap:40px;margin-bottom:30px">
+    <div style="display:flex;align-items:end;justify-content:space-between;gap:40px;margin-bottom:34px">
       <div>
         <span class="kicker">2026 National Finals</span>
         <h1 style="font-size:62px">The Road<br><span class="gold">Ends Here</span></h1>
       </div>
       <div style="text-align:right">
-        <p class="meta">October 24 & 25, 2026</p>
+        <p class="meta" style="font-weight:600;color:var(--vg-grey)">October 24 & 25, 2026</p>
         <p class="meta">Sunshine Coast Stadium, Bokarina QLD</p>
+        <div style="display:flex;align-items:center;justify-content:flex-end;gap:14px;margin-top:20px">
+          <span style="font-weight:600;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--vg-grey)">Presented By</span>
+          <a href="https://www.veteransfirstconsulting.com/" target="_blank" rel="noopener"><img src="https://veterangames.com/wp-content/uploads/2025/05/VFC-Original-Logo-9000-x-9000-px1-150x150.png" alt="Veterans First Consulting" style="height:50px;filter:brightness(0) invert(1);opacity:.92"></a>
+        </div>
       </div>
     </div>
     <div class="vid">
@@ -60,62 +64,174 @@ SWAP LIST (remote → local when supplied)
   </div>
 </section>
 
-<!-- [Slipstream] Key event info: Elementor icon boxes grid (TRX info boxes) -->
+<!-- [Slipstream] Key event info: TRX info boxes grid, values all caps -->
 <section class="sec sec-coal sec-angle">
   <div class="wrap">
     <span class="kicker">Key Event Info</span>
     <h2 style="margin-bottom:40px">Everything You Need To Know</h2>
     <div class="grid g4">
-      <div class="stat"><span>Dates</span><b style="font-size:24px">Oct 24 & 25</b><p class="meta" style="margin-top:8px">Two day event weekend. Time slots confirmed post registration.</p></div>
-      <div class="stat"><span>Location</span><b style="font-size:24px">Sunshine Coast Stadium</b><p class="meta" style="margin-top:8px">31 Sportsmans Parade, Bokarina QLD 4575</p></div>
-      <div class="stat"><span>Teams</span><b style="font-size:24px">8 + 2 Reserves</b><p class="meta" style="margin-top:8px">Capped at 25 teams. Captain registers the team first.</p></div>
-      <div class="stat"><span>Entry</span><b style="font-size:24px">From $100pp</b><p class="meta" style="margin-top:8px">Early bird pricing. Spectators free via Eventbrite.</p></div>
+      <div class="stat"><span>Dates</span><b style="font-size:24px">OCT 24 & 25</b><p class="meta" style="margin-top:8px">Two day event weekend. Time slots confirmed post registration.</p></div>
+      <div class="stat"><span>Location</span><b style="font-size:24px">SUNSHINE COAST STADIUM</b><p class="meta" style="margin-top:8px">31 Sportsmans Parade, Bokarina QLD 4575</p></div>
+      <div class="stat"><span>Teams</span><b style="font-size:24px">8 + 2 RESERVES</b><p class="meta" style="margin-top:8px">Capped at 25 teams. Captain registers the team first.</p></div>
+      <div class="stat"><span>Entry</span><b style="font-size:24px">FROM $100PP</b><p class="meta" style="margin-top:8px">Early bird pricing. Spectators free via Eventbrite.</p></div>
     </div>
     <p style="max-width:860px;margin-top:40px">The Veteran Games National Finals are Australia's premier military inspired team competition for Veterans. Across two days, teams from around the country compete in demanding physical and tactical challenges that showcase purpose, community, service and excellence, while bringing veterans, families and the public together. Every event is scored on Time, Technique and Teamwork.</p>
   </div>
 </section>
 
-<!-- [Slipstream] Compete / Spectate cards: APPROVED CUSTOM ARRANGEMENT (Elementor columns + icon box + buttons) -->
+<!-- [Slipstream] Compete / Spectate cards: APPROVED CUSTOM ARRANGEMENT (Elementor columns, image, icon box, buttons) -->
 <section class="sec sec-light" id="compete">
   <div class="wrap grid g2">
-    <div class="card" style="padding:44px;border-top:4px solid var(--vg-gold)">
-      <span class="kicker">I Am A Veteran</span>
-      <h2 style="font-size:34px">Compete</h2>
-      <div class="rule"></div>
-      <p>Any person who has served within the Military is eligible to compete. Former or current serving personnel, Australian or overseas. Form your team of 10 and take on the country's best.</p>
-      <p class="meta" style="margin:18px 0 26px">Entries via Race Roster · Team Captain registers first</p>
-      <a class="btn btn-gold" href="https://raceroster.com/events/2026/129729/veteran-games-national-finals-2026" target="_blank" rel="noopener">Register Team</a>
+    <div class="card" style="border-top:4px solid var(--vg-gold)">
+      <img class="card-img" src="https://veterangames.com/wp-content/uploads/2026/07/team-wall.jpg" alt="Veteran team on the wall">
+      <div class="card-bd" style="padding:36px 40px 40px">
+        <span class="kicker" style="margin-bottom:4px">I Am A Veteran</span>
+        <h2 style="font-size:34px">Compete</h2>
+        <p>Any person who has served within the Military is eligible to compete. Former or current serving personnel, Australian or overseas. Form your team of 10 and take on the country's best.</p>
+        <p class="meta" style="margin:6px 0 14px">Entries via Race Roster · Team Captain registers first</p>
+        <a class="btn btn-gold" href="https://raceroster.com/events/2026/129729/veteran-games-national-finals-2026" target="_blank" rel="noopener">Register Team</a>
+      </div>
     </div>
-    <div class="card" style="padding:44px">
-      <span class="kicker">I Am A Supporter</span>
-      <h2 style="font-size:34px">Spectate</h2>
-      <div class="rule"></div>
-      <p>Come along and enjoy the family friendly event weekend. Cheer the teams through the course, explore the vendor village and be part of something bigger.</p>
-      <p class="meta" style="margin:18px 0 26px">Free tickets via Eventbrite</p>
-      <a class="btn btn-line" href="https://www.eventbrite.com/e/veteran-games-national-finals-2026-tickets-1992395086337" target="_blank" rel="noopener">Register Free</a>
+    <div class="card">
+      <img class="card-img" src="https://veterangames.com/wp-content/uploads/2026/07/veterangames__1781926357_3923403441600422054_58357533481.jpg" alt="Crowd at the Veteran Games">
+      <div class="card-bd" style="padding:36px 40px 40px">
+        <span class="kicker" style="margin-bottom:4px">I Am A Supporter</span>
+        <h2 style="font-size:34px">Spectate</h2>
+        <p>Come along and enjoy the family friendly event weekend. Cheer the teams through the course, explore the vendor village and be part of something bigger.</p>
+        <p class="meta" style="margin:6px 0 14px">Free tickets via Eventbrite</p>
+        <a class="btn btn-line" href="https://www.eventbrite.com/e/veteran-games-national-finals-2026-tickets-1992395086337" target="_blank" rel="noopener">Free Tickets</a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- [Slipstream] What to expect: TRX swiper of obstacle cards (only obstacles at this event) -->
-<section class="sec sec-coal">
+<!-- [Slipstream] What to expect: TRX Addons swiper with VIDEO slides (same component as Home), 1.4 slides per view -->
+<section class="sec sec-coal sec-angle">
   <div class="wrap">
-    <div class="sec-head">
-      <div><span class="kicker">What To Expect</span><h2>The Course Awaits</h2></div>
-      <a class="btn btn-line btn-sm" href="03-the-experience.html">The Full Experience</a>
-    </div>
-    <div class="rail">
-      <article class="card"><img class="card-img" src="https://veterangames.com/wp-content/uploads/2024/10/RJD_Saturday_17082024_@JGRimages-1-scaled.jpg" alt="Run Dodge Jump"><div class="card-bd"><h4>Run Dodge Jump</h4></div></article>
-      <article class="card"><img class="card-img" src="https://veterangames.com/wp-content/uploads/2024/10/NinjaWall_Sunday_18082024_@JGRimages-15-2-1.jpg" alt="Ninja Wall"><div class="card-bd"><h4>The Ninja Wall</h4></div></article>
-      <article class="card"><img class="card-img" src="https://veterangames.com/wp-content/uploads/2024/10/TugOfWar_Sunday_18082024_@JGRimages-22-1.jpg" alt="Tug of War"><div class="card-bd"><h4>Tug of War</h4></div></article>
-      <article class="card"><img class="card-img" src="https://veterangames.com/wp-content/uploads/2023/10/Veteran-Games-2023-Med-good-6-scaled.jpeg" alt="Medical Stand"><div class="card-bd"><h4>Medical Stand</h4></div></article>
-      <article class="card"><img class="card-img" src="https://veterangames.com/wp-content/uploads/2024/10/KRUS0947-1-scaled.jpg" alt="Casualty Evac"><div class="card-bd"><h4>Casualty Evac</h4></div></article>
-      <article class="card"><img class="card-img" src="https://veterangames.com/wp-content/uploads/2024/10/Swim_Saturday_17082024_@JGRimages-30-1-scaled.jpg" alt="Water Course"><div class="card-bd"><h4>Water Course</h4></div></article>
+    <div style="margin-bottom:40px"><span class="kicker">What To Expect</span><h2>The Course Awaits</h2></div>
+  </div>
+  <div class="wrap" style="max-width:1360px">
+    <div class="rail rail-wide">
+      <div>
+        <div class="poster"><img src="https://veterangames.com/wp-content/uploads/2024/10/RJD_Saturday_17082024_@JGRimages-1-scaled.jpg" alt="Run Dodge Jump video"><span class="play"></span></div>
+        <div class="pcap"><h3>Run Dodge Jump</h3><a class="btn btn-line btn-sm" href="03-the-experience.html#rdj">Learn More</a></div>
+      </div>
+      <div>
+        <div class="poster"><img src="https://veterangames.com/wp-content/uploads/2024/10/NinjaWall_Sunday_18082024_@JGRimages-15-2-1.jpg" alt="Ninja Wall video"><span class="play"></span></div>
+        <div class="pcap"><h3>The Ninja Wall</h3><a class="btn btn-line btn-sm" href="03-the-experience.html#ninja">Learn More</a></div>
+      </div>
+      <div>
+        <div class="poster"><img src="https://veterangames.com/wp-content/uploads/2024/10/TugOfWar_Sunday_18082024_@JGRimages-22-1.jpg" alt="Tug of War video"><span class="play"></span></div>
+        <div class="pcap"><h3>Tug of War</h3><a class="btn btn-line btn-sm" href="03-the-experience.html#tug">Learn More</a></div>
+      </div>
+      <div>
+        <div class="poster"><img src="https://veterangames.com/wp-content/uploads/2023/10/Veteran-Games-2023-Med-good-6-scaled.jpeg" alt="Medical Stand video"><span class="play"></span></div>
+        <div class="pcap"><h3>Medical Stand</h3><a class="btn btn-line btn-sm" href="03-the-experience.html#medical">Learn More</a></div>
+      </div>
+      <div>
+        <div class="poster"><img src="https://veterangames.com/wp-content/uploads/2024/10/KRUS0947-1-scaled.jpg" alt="Casualty Evac video"><span class="play"></span></div>
+        <div class="pcap"><h3>Casualty Evac</h3><a class="btn btn-line btn-sm" href="03-the-experience.html#evac">Learn More</a></div>
+      </div>
+      <div>
+        <div class="poster"><img src="https://veterangames.com/wp-content/uploads/2024/10/Swim_Saturday_17082024_@JGRimages-30-1-scaled.jpg" alt="Water Course video"><span class="play"></span></div>
+        <div class="pcap"><h3>Water Course</h3><a class="btn btn-line btn-sm" href="03-the-experience.html#water">Learn More</a></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- [Slipstream] Year overviews: Elementor split sections with video widgets (videos.md) -->
+<!-- [Slipstream] Get Ready: TRX icon box cards, 3 up, gold line icons (Elementor icon boxes) -->
+<section class="sec sec-light">
+  <div class="wrap">
+    <span class="kicker">Get Ready</span>
+    <h2 style="margin-bottom:44px">Know Before You Register</h2>
+    <div class="grid g3">
+      <div class="card" style="padding:36px">
+        <svg class="vicon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7.2 2.8v5.1c0 4.6-3 7.7-7.2 9.6-4.2-1.9-7.2-5-7.2-9.6V5.8z"/><path d="M8.8 12l2.2 2.2 4.2-4.4"/></svg>
+        <h3 style="margin-bottom:14px">Eligibility</h3>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:10px">
+          <li class="tip"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>Open to anyone who has served within the Military</li>
+          <li class="tip"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>Former or current serving personnel</li>
+          <li class="tip"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>Australian or overseas service</li>
+          <li class="tip"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>One team per competitor</li>
+        </ul>
+      </div>
+      <div class="card" style="padding:36px">
+        <svg class="vicon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="12" r="4.6"/><circle cx="15" cy="12" r="4.6"/></svg>
+        <h3 style="margin-bottom:14px">Team Rules</h3>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:10px">
+          <li class="tip"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>Captain registers the team and team name first</li>
+          <li class="tip"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>Captain manages check in and communications</li>
+          <li class="tip"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>Reserves substituted via the Captain before an activity</li>
+          <li class="tip"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>Time slots allocated post registration</li>
+        </ul>
+      </div>
+      <div class="card" style="padding:36px">
+        <svg class="vicon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 3.5L3.5 6l2 4 2.2-1.1V21h8.6V8.9L18.5 10l2-4-5-2.5c-.9 1.1-2.1 1.7-3.5 1.7s-2.6-.6-3.5-1.7z"/></svg>
+        <h3 style="margin-bottom:14px">What To Wear</h3>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:10px">
+          <li class="tip"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>Camouflage pants, your choice</li>
+          <li class="tip"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>Boots or shoes, your choice</li>
+          <li class="tip"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>T shirt or team shirt, your choice</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- [Slipstream] Train For It: Elementor split, checklist icon list + image + CTA -->
+<section class="sec sec-coal">
+  <div class="wrap split" style="align-items:start">
+    <div>
+      <span class="kicker">Train For It</span>
+      <h2>Nine Things To Drill<br>Before October</h2>
+      <div class="rule"></div>
+      <div class="grid g2" style="gap:14px 28px">
+        <div class="tip"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>Stretcher and stores carry, 100 to 200m</div>
+        <div class="tip"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>Rope climb and descent</div>
+        <div class="tip"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>Swimming 50m in clothes</div>
+        <div class="tip"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>20kg to 50kg carriage, solo and pairs</div>
+        <div class="tip"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>Walls and cargo net fundamentals</div>
+        <div class="tip"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>Knots</div>
+        <div class="tip"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>Tourniquets, splints and bandages</div>
+        <div class="tip"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>Tyre flipping technique</div>
+        <div class="tip"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg>Shuttle runs and short sprints</div>
+      </div>
+      <div class="btn-row" style="margin-top:34px">
+        <a class="btn btn-gold" href="https://raceroster.com/events/2026/129729/veteran-games-national-finals-2026" target="_blank" rel="noopener">Register Team</a>
+        <a class="btn btn-line" href="03-the-experience.html">The Full Experience</a>
+      </div>
+    </div>
+    <img src="https://veterangames.com/wp-content/uploads/2026/07/team-wall.jpg" alt="Team training on the wall" style="border:1px solid var(--vg-line)">
+  </div>
+</section>
+
+<!-- [Slipstream] Sponsor strip: TRX partners carousel, one row, off white, greyscale to colour -->
+<section class="sec sec-light" style="padding:64px 0">
+  <div class="wrap">
+    <p class="kicker" style="margin-bottom:22px">Our Sponsors & Partners</p>
+    <div class="logos logos-rail logos-clean">
+      <span class="lg lg-sq"><img src="https://veterangames.com/wp-content/uploads/2025/05/VFC-Original-Logo-9000-x-9000-px1-150x150.png" alt="Veterans First Consulting"></span>
+      <span class="lg lg-sq"><img style="height:96px" src="https://veterangames.com/wp-content/uploads/2025/08/Untitled-design12-1024x1024.png" alt="Valhalla Tactical & Outdoor"></span>
+      <span class="lg"><img src="https://veterangames.com/wp-content/uploads/2025/08/High-Sierra-Primary-Logo-Midnight-scaled3-1024x507.png" alt="High Sierra"></span>
+      <span class="lg lg-sq"><img src="https://veterangames.com/wp-content/uploads/2025/03/Savvy-logo-socials-1-1024x1024.png" alt="Savvy Beverages"></span>
+      <span class="lg lg-pad"><img src="https://veterangames.com/wp-content/uploads/2025/06/AMB_Logo_Full_Colour_Padding-scaled-1-1024x382.png" alt="Australian Military Bank"></span>
+      <span class="lg lg-crop"><img style="width:220px" src="https://veterangames.com/wp-content/uploads/2025/09/Copy-of-CMBT_Logo-no-tagline_black-1-1024x1024.png" alt="CMBT"></span>
+      <span class="lg"><img src="https://veterangames.com/wp-content/uploads/2026/06/Family-First-Care-Logo-CMYK_Pos-1024x431.jpg" alt="Medi Skills Institute"></span>
+      <span class="lg lg-min"><img src="https://veterangames.com/wp-content/uploads/2026/02/Life_Savers_Logo_Stripes_CMYK-1-1024x690.jpg" alt="Lifesavers"></span>
+      <span class="lg lg-crop"><img style="width:220px" src="https://veterangames.com/wp-content/uploads/2025/05/sponsor-tiles-122-1024x1024.png" alt="Ringwood RSL"></span>
+      <span class="lg lg-crop"><img src="https://veterangames.com/wp-content/uploads/2023/07/Veteran-Games-Axon.jpg" alt="AXON Property Group"></span>
+      <span class="lg lg-sq"><img src="https://veterangames.com/wp-content/uploads/2026/05/Greenbank-Services-Club-Logo-Suite_STACK_MONO-1-1-1024x979.jpg" alt="Greenbank Services Club"></span>
+      <span class="lg lg-crop"><img style="width:220px" src="https://veterangames.com/wp-content/uploads/2025/03/FYL-square-logo-1-1024x1024.png" alt="Fuel Your Life"></span>
+      <span class="lg"><img src="https://veterangames.com/wp-content/uploads/2026/04/Good_Joint_Tagline_Stacked_DRK_Accent.png" alt="The Good Joint"></span>
+      <span class="lg lg-sq"><img src="https://veterangames.com/wp-content/uploads/2026/05/scan-to-book_edited.avif" alt="Inside Out Active Recovery"></span>
+      <span class="lg lg-sq"><img src="https://veterangames.com/wp-content/uploads/2026/05/image-1.png" alt="Eildon RSL Sub Branch"></span>
+      <span class="lg lg-sq"><img src="https://veterangames.com/wp-content/uploads/2026/06/Jericho-Black-1.png" alt="Jericho"></span>
+    </div>
+  </div>
+</section>
+
+<!-- [Slipstream] Year overviews: Elementor 3 up video widgets (videos.md) -->
 <section class="sec sec-light">
   <div class="wrap">
     <span class="kicker">The Story So Far</span>
@@ -140,50 +256,12 @@ SWAP LIST (remote → local when supplied)
   </div>
 </section>
 
-<!-- [Slipstream] Participation requirements + training tips: Elementor split + icon lists. Copy: live SC 2026 page -->
+<!-- [Slipstream] FAQ: Elementor Accordion, left aligned on the page grid -->
 <section class="sec sec-coal">
-  <div class="wrap split" style="align-items:start">
-    <div>
-      <span class="kicker">Get Ready</span>
-      <h2>Participation Requirements</h2>
-      <div class="rule"></div>
-      <ul style="list-style:none;display:flex;flex-direction:column;gap:12px">
-        <li>A competitor may only register to compete in one team and must be current or former serving military personnel.</li>
-        <li>Each team elects one Team Captain responsible for registration, check in and communications during the Games.</li>
-        <li>Competitors and Reserves may be substituted through the Team Captain with event staff prior to an activity.</li>
-        <li>Competition time slots are allocated post registration.</li>
-      </ul>
-      <h3 style="margin:34px 0 12px">Clothing</h3>
-      <ul style="list-style:none;display:flex;flex-direction:column;gap:8px">
-        <li>Camouflage pants, your choice</li>
-        <li>Boots or shoes, your choice</li>
-        <li>T shirt or team shirt, your choice</li>
-      </ul>
-    </div>
-    <div>
-      <h3 style="margin-bottom:12px">Training Tips</h3>
-      <ul style="list-style:none;display:flex;flex-direction:column;gap:10px">
-        <li>Stretcher carry and stores carry, 100 to 200m</li>
-        <li>Rope climb and descent</li>
-        <li>Swimming 50m in clothes</li>
-        <li>20kg to 50kg equipment carriage, solo and in pairs</li>
-        <li>Obstacle course fundamentals, walls and cargo nets</li>
-        <li>Knots</li>
-        <li>Basic first aid, tourniquet, splints and bandages</li>
-        <li>Tyre flipping technique</li>
-        <li>Shuttle runs and short sprints</li>
-      </ul>
-      <img src="https://veterangames.com/wp-content/uploads/2026/07/team-wall.jpg" alt="Team training" style="margin-top:26px;border:1px solid var(--vg-line)">
-    </div>
-  </div>
-</section>
-
-<!-- [Slipstream] FAQ: Elementor Accordion widget -->
-<section class="sec sec-light">
-  <div class="wrap" style="max-width:960px">
+  <div class="wrap">
     <span class="kicker">Good To Know</span>
     <h2 style="margin-bottom:36px">FAQ, Insurance & Cancellation</h2>
-    <div class="acc">
+    <div class="acc" style="max-width:900px">
       <div class="acc-item open">
         <button class="acc-q" type="button">Who can compete?</button>
         <div class="acc-a"><p>Any person who has served within the Military is eligible to compete in the Veteran Games. Competitors may be former or current serving personnel, Australian or overseas.</p></div>
@@ -205,12 +283,12 @@ SWAP LIST (remote → local when supplied)
         <div class="acc-a"><p>Every activity is scored on Time, Technique and Teamwork. The team with the strongest combined performance across the weekend takes the title.</p></div>
       </div>
     </div>
-    <p style="margin-top:28px"><a class="btn btn-line" href="10-contact.html">Still Have Questions? Get In Touch</a></p>
+    <p style="margin-top:28px"><a class="btn btn-line btn-sm" href="10-contact.html">Still Have Questions? Get In Touch</a></p>
   </div>
 </section>
 
 <!-- [Slipstream] Other upcoming events: TEC events list, 3 up -->
-<section class="sec sec-coal">
+<section class="sec sec-light">
   <div class="wrap">
     <div class="sec-head">
       <div><span class="kicker">Keep Going</span><h2>Other Upcoming Events</h2></div>

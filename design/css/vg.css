@@ -6,7 +6,6 @@
    + Elementor site settings. No custom widgets implied.
    ============================================================ */
 
-@font-face { font-family:'Montserrat'; src:url('../../assets/fonts/Montserrat-Black.otf') format('opentype'); font-weight:900; }
 @font-face { font-family:'Montserrat'; src:url('../../assets/fonts/Montserrat-ExtraBold.otf') format('opentype'); font-weight:800; }
 @font-face { font-family:'Montserrat'; src:url('../../assets/fonts/Montserrat-Bold.otf') format('opentype'); font-weight:700; }
 @font-face { font-family:'Montserrat'; src:url('../../assets/fonts/Montserrat-SemiBold.otf') format('opentype'); font-weight:600; }
@@ -29,7 +28,7 @@ button,input,select,textarea{font-family:'Montserrat',Arial,sans-serif}
 .wrap{max-width:var(--wrap);margin:0 auto;padding:0 40px}
 
 h1,h2,h3,h4{color:var(--vg-white);text-transform:uppercase;line-height:.98}
-h1{font-weight:900;font-size:76px;letter-spacing:.01em}
+h1{font-weight:800;font-size:76px;letter-spacing:.01em}
 h2{font-weight:800;font-size:44px}
 h3{font-weight:800;font-size:24px}
 h4{font-weight:700;font-size:18px}
@@ -104,7 +103,7 @@ h4{font-weight:700;font-size:18px}
 /* ---------- Event rows (02) ---------- */
 .ev-row{display:grid;grid-template-columns:150px 1fr auto;gap:34px;align-items:center;background:var(--vg-panel);border:1px solid var(--vg-line);border-left:4px solid var(--vg-gold);padding:30px 34px;margin-bottom:18px}
 .ev-date{text-align:center;border-right:1px solid var(--vg-line);padding-right:30px}
-.ev-date b{display:block;font-weight:900;font-size:38px;color:#fff;line-height:1;padding:4px 0}
+.ev-date b{display:block;font-weight:800;font-size:38px;color:#fff;line-height:1;padding:4px 0}
 .ev-date b.range{font-size:25px;line-height:1.2;padding:8px 0}
 .ev-date span{font-weight:600;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--vg-gold)}
 .ev-cta{display:flex;flex-direction:column;gap:10px;min-width:220px}
@@ -139,7 +138,7 @@ h4{font-weight:700;font-size:18px}
 .logos-clean .lg:hover img{filter:none}
 .logos-clean .lg-sq img{height:72px}   /* tight square marks: more height for equal mass */
 .logos-clean .lg-pad img{height:96px;max-width:160px}  /* wide files with baked padding */
-.logos-clean .lg-crop img{width:200px;max-width:none;height:auto;flex-shrink:0}  /* square canvas, tiny centred mark: oversize + chip clips the empty margins (CSS crop). flex-shrink:0 stops the flex chip squashing it back down */
+.logos-clean .lg-crop img{width:200px;max-width:none;height:auto;max-height:none;object-fit:fill;flex-shrink:0}  /* square canvas, tiny centred mark: oversize + chip clips the empty margins (CSS crop). flex-shrink:0 stops the flex chip squashing it back down */
 .logos-clean .lg-min img{height:38px}  /* solid block lockups (e.g. striped Lifesavers) kept modest */
 /* Single line logo scroll variant (TRX partners carousel, one row) */
 .logos-rail{flex-wrap:nowrap;overflow-x:auto;padding-bottom:10px;scroll-snap-type:x mandatory;align-items:center}
@@ -154,7 +153,7 @@ h4{font-weight:700;font-size:18px}
 /* ---------- Stat blocks ---------- */
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
 .stat{border-top:3px solid var(--vg-gold);background:var(--vg-panel);padding:30px}
-.stat b{font-weight:900;font-size:52px;color:#fff;line-height:1;display:block;margin:6px 0 14px}
+.stat b{font-weight:800;font-size:52px;color:#fff;line-height:1;display:block;margin:6px 0 14px}
 .stat b:last-child{margin-bottom:0}
 .stat span{display:block;font-weight:600;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--vg-gold);line-height:1.55}
 
@@ -195,12 +194,21 @@ h4{font-weight:700;font-size:18px}
 .tl{border-left:2px solid var(--vg-line);padding-left:44px;display:flex;flex-direction:column;gap:70px;position:relative}
 .tl-item{position:relative}
 .tl-item::before{content:"";position:absolute;left:-53px;top:6px;width:16px;height:16px;background:var(--vg-black);border:3px solid var(--vg-gold);transform:rotate(45deg)}
-.tl-year{font-weight:900;font-size:30px;color:var(--vg-gold)}
+.tl-year{font-weight:800;font-size:30px;color:var(--vg-gold)}
 
 /* ---------- Sponsor tier headers (05) ---------- */
 .tier{display:flex;align-items:center;gap:26px;margin:0 0 36px}
 .tier h2{white-space:nowrap;font-size:34px}
 .tier::after{content:"";height:2px;flex:1;background:linear-gradient(90deg,var(--vg-gold),transparent)}
+
+/* ---------- Sponsor logo plates (05 tier cards): uniform white plate, normalised mark size ---------- */
+.plate{height:120px;background:#fff;display:flex;align-items:center;justify-content:center;padding:18px;overflow:hidden}
+.plate img{max-height:74px;max-width:72%;object-fit:contain}
+.plate-zoom img{max-height:112px;max-width:94%}  /* square canvas tiles with baked padding */
+
+/* ---------- Checklist tips (11) ---------- */
+.tip{display:flex;gap:12px;align-items:flex-start}
+.tip svg{width:18px;height:18px;stroke:var(--vg-gold);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;flex:0 0 18px;margin-top:4px}
 
 /* ---------- Value icons (06, gold line icons) ---------- */
 .vicon{width:36px;height:36px;fill:none;stroke:var(--vg-gold);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;margin-bottom:16px;display:block}
@@ -266,6 +274,7 @@ h4{font-weight:700;font-size:18px}
 .sec-light .logos .lg{border:1px solid #E2DED2}
 .sec-light .rail::-webkit-scrollbar-thumb{background:#D8D3C4}
 .sec-light .rule{background:linear-gradient(90deg,var(--vg-gold-deep),transparent)}
+.sec-light .vicon,.sec-light .tip svg{stroke:var(--vg-gold-deep)}
 
 /* ---------- Carousel (CSS scroll snap = TRX swiper) ---------- */
 .rail{display:grid;grid-auto-flow:column;grid-auto-columns:31.5%;gap:26px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:14px}

@@ -4,7 +4,7 @@ Brand family: Montserrat (supplied by Joey, `/Fonts` → copied to `/assets/font
 
 | Role | Font | Weight | Case | Notes |
 |---|---|---|---|---|
-| Display / H1 | Montserrat Black | 900 | UPPERCASE | Tight leading (0.95), letter-spacing 0.01em |
+| Display / H1 | Montserrat ExtraBold | 800 | UPPERCASE | Tight leading (0.95), letter-spacing 0.01em. Black (900) retired per Joey 15 Jul |
 | H2 / H3 | Montserrat ExtraBold | 800 | UPPERCASE | Gold kicker label above in SemiBold |
 | Kicker / labels / buttons | Montserrat SemiBold | 600 | UPPERCASE | Letter-spacing 0.18em |
 | Body | Montserrat Regular | 400 | Sentence | 16px / 1.7 |
