@@ -1,5 +1,15 @@
 /* VG prototype interactions. Production equivalents are theme native:
    accordion = Elementor Accordion, tabs = TRX tabs / post filters. */
+
+/* PROTOTYPE ONLY cache killer: stamps every local asset with the load time so
+   the browser always fetches the latest file. Remove for production. */
+(function () {
+  var stamp = 'cb=' + Date.now();
+  document.querySelectorAll('img[src^="../assets/"], video[poster^="../assets/"]').forEach(function (el) {
+    if (el.poster) el.poster += (el.poster.indexOf('?') > -1 ? '&' : '?') + stamp;
+    if (el.src && el.src.indexOf('/assets/') > -1) el.src += (el.src.indexOf('?') > -1 ? '&' : '?') + stamp;
+  });
+})();
 document.addEventListener('click', function (e) {
   var q = e.target.closest('.acc-q');
   if (q) q.parentElement.classList.toggle('open');
