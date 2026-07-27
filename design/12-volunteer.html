@@ -6,9 +6,8 @@ Volunteer form = CF7 / Elementor Forms mapping (fields mirror live 2026 Voluntee
 Nav: sits under Show Your Support dropdown.
 
 SWAP LIST (remote → local when supplied)
-  Hero: live volunteer-banner-img (from old Volunteer page, Elementor section bg) → assets/img/hero/volunteer-hero.jpg
-  Why volunteer image: live LitlCreative-VGGC-Saturday-176 (not in Drive index) → assets/img/general/volunteer.jpg
-  NOTE: assets/img/hero/volunteer-hero.jpg holds an unused alternate crop (Drive: Media-20)
+  Hero: LOCAL assets/img/hero/volunteer-hero.jpg (LitlCreative-VeteranGamesGC26-Friday-3, supplied by Joey)
+  Why volunteer image: LOCAL assets/img/general/volunteer.jpg (LitlCreative-VGGC-Saturday-176, supplied by Joey)
   Presenting logo: LOCAL assets/logos/VFC-main.png, white via CSS filter
   Sponsor logos: LOCAL assets/logos/sponsors/Sponsor-*.png (balanced transparent set, supplied by Joey)
 ================================================================= -->
@@ -42,9 +41,7 @@ SWAP LIST (remote → local when supplied)
 
 <!-- [Slipstream] Page hero: Elementor section, bg image + overlay. Presenting sponsor lockup = white overlay logo -->
 <section class="hero hero-page">
-  <!-- Source file has a dark overlay baked in (avg luma 67, max 120) so it stacks with .hero::after.
-       Lift it back to match the other page heroes. Remove this filter once a clean original is supplied. -->
-  <img class="hero-img" src="https://veterangames.com/wp-content/uploads/2026/07/volunteer-banner-img-scaled.jpg" alt="" style="filter:brightness(1.75) contrast(1.05) saturate(1.15)">
+  <img class="hero-img" src="../assets/img/hero/volunteer-hero.jpg" alt="">
   <div class="wrap">
     <span class="kicker">Volunteer At Veteran Games 2026</span>
     <h1>We Need <span class="gold">You</span></h1>
@@ -74,7 +71,7 @@ SWAP LIST (remote → local when supplied)
       </div>
     </div>
     <div>
-      <img src="https://veterangames.com/wp-content/uploads/2026/07/LitlCreative-VGGC-Saturday-176-772x1024.jpg" alt="Volunteer supporting a competitor on course" style="border:1px solid var(--vg-line)">
+      <img src="../assets/img/general/volunteer.jpg" alt="Volunteer supporting a competitor on course" style="border:1px solid var(--vg-line)">
     </div>
   </div>
 </section>
