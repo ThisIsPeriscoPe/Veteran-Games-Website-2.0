@@ -51,7 +51,11 @@ h4{font-weight:700;font-size:18px}
 /* ---------- Header (Slipstream: Elementor header template + TRX menu) ---------- */
 .hdr{position:sticky;top:0;z-index:50;background:rgba(11,11,12,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--vg-line)}
 .hdr-in{max-width:1360px;margin:0 auto;display:flex;align-items:center;gap:34px;padding:0 40px;height:86px}
-.hdr .logo img{height:56px;width:auto}
+/* Logo + header CTA must never be squeezed by the flex row (that warps the logo) */
+.hdr .logo{flex:0 0 auto}
+.hdr .logo img{height:56px;width:auto;flex-shrink:0}
+.hdr-in>.btn{flex:0 0 auto}
+.ftr .logo img{height:74px;width:auto;flex-shrink:0}
 .nav{display:flex;gap:26px;margin-left:auto;align-items:center}
 .nav>li{list-style:none;position:relative}
 .nav a{color:#fff;font-weight:600;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;padding:33px 2px;display:block;white-space:nowrap}
