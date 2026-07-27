@@ -1,0 +1,257 @@
+<!doctype html>
+<!-- ================================================================
+12 VOLUNTEER · Veteran Games Website 2.0 · desktop 1440
+Copy source: veterangames.com/volunteer-2026 (live), restructured to new theme blocks.
+Volunteer form = CF7 / Elementor Forms mapping (fields mirror live 2026 Volunteer EOI Form V4).
+Nav: sits under Show Your Support dropdown.
+
+SWAP LIST (remote → local when supplied)
+  Hero: LOCAL assets/img/hero/volunteer-hero.jpg (Drive: LitlCreative-VGGC-Media-20)
+  Why volunteer image: live LitlCreative-VGGC-Saturday-176 (not in Drive index) → assets/img/general/volunteer.jpg
+  Presenting logo: LOCAL assets/logos/VFC-main.png, white via CSS filter
+  Sponsor logos: LOCAL assets/logos/sponsors/Sponsor-*.png (balanced transparent set, supplied by Joey)
+================================================================= -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1440">
+<title>Volunteer · Veteran Games</title>
+<link rel="stylesheet" href="css/vg.css">
+</head>
+<body>
+
+<!-- [Slipstream] Header (shared, see 01) -->
+<header class="hdr">
+  <div class="hdr-in">
+    <a class="logo" href="01-home.html"><img src="https://veterangames.com/wp-content/uploads/2023/04/vg-logo-100x85.png" alt="Veteran Games"></a>
+    <ul class="nav">
+      <li><a href="01-home.html">Home</a></li>
+      <li><a href="02-find-my-event.html">Find My Event</a></li>
+      <li><a href="03-the-experience.html">The Experience</a></li>
+      <li><a href="04-our-purpose.html">Our Purpose</a></li>
+      <li class="on"><a href="05-our-sponsors.html">Show Your Support</a>
+        <div class="sub"><a href="06-become-a-sponsor.html">Become a Sponsor</a><a href="07-donate.html">Donate</a><a href="12-volunteer.html">Volunteer</a><a href="05-our-sponsors.html">Our Sponsors</a></div></li>
+      <li><a href="08-stories-stats-resources.html">News &amp; Media</a></li>
+      <li><a href="09-shop.html">Shop</a></li>
+      <li><a href="10-contact.html">Contact</a></li>
+    </ul>
+    <a class="btn btn-gold btn-sm" href="#volunteer-form">Volunteer Now</a>
+  </div>
+</header>
+
+<!-- [Slipstream] Page hero: Elementor section, bg image + overlay. Presenting sponsor lockup = white overlay logo -->
+<section class="hero hero-page">
+  <img class="hero-img" src="../assets/img/hero/volunteer-hero.jpg" alt="">
+  <div class="wrap">
+    <span class="kicker">Volunteer At Veteran Games 2026</span>
+    <h1>We Need <span class="gold">You</span></h1>
+    <p class="hero-sub">Want to be part of something bigger? We are looking for volunteers to help bring the 2026 National Finals to life on the Sunshine Coast.</p>
+    <p class="meta" style="font-weight:600;margin-bottom:26px">Saturday 24 &amp; Sunday 25 October · Sunshine Coast Stadium</p>
+    <a class="btn btn-gold" href="#volunteer-form">Join The Volunteer Team</a>
+    <div style="display:flex;align-items:center;gap:16px;margin-top:40px">
+      <span style="font-weight:600;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--vg-grey)">Presented By</span>
+      <a href="https://www.veteransfirstconsulting.com/" target="_blank" rel="noopener"><img src="../assets/logos/VFC-main.png" alt="Veterans First Consulting" style="height:72px;width:auto;filter:brightness(0) invert(1)"></a>
+    </div>
+  </div>
+</section>
+
+<!-- [Slipstream] Why volunteer: Elementor split text + image. Copy: live Volunteer page -->
+<section class="sec sec-light">
+  <div class="wrap split">
+    <div>
+      <span class="kicker">Why Volunteer</span>
+      <h2>More Than A Competition</h2>
+      <div class="rule"></div>
+      <p class="lead">The Veteran Games gives Veterans a mission, a team and a space to reconnect through physical challenge and shared experience.</p>
+      <p style="margin-top:16px">As a volunteer you help create the environment that makes this possible, from supporting participants and spectators to helping the event team keep the weekend running smoothly.</p>
+      <p style="margin-top:16px">This is your chance to support Veterans, connect with the community and play a hands on role in delivering a high energy weekend built around teamwork, resilience and purpose.</p>
+      <div class="btn-row" style="margin-top:28px">
+        <a class="btn btn-gold" href="#volunteer-form">Register Your Interest</a>
+        <a class="btn btn-line" href="11-event-info.html">Event Info</a>
+      </div>
+    </div>
+    <div>
+      <img src="https://veterangames.com/wp-content/uploads/2026/07/LitlCreative-VGGC-Saturday-176-772x1024.jpg" alt="Volunteer supporting a competitor on course" style="border:1px solid var(--vg-line)">
+    </div>
+  </div>
+</section>
+
+<!-- [Slipstream] Volunteer roles: TRX icon boxes grid, 3 up. Copy: live Volunteer page role list -->
+<section class="sec sec-coal sec-angle">
+  <div class="wrap">
+    <span class="kicker">What You Will Be Helping With</span>
+    <h2 style="margin-bottom:16px">Volunteer Roles</h2>
+    <p style="max-width:760px;margin-bottom:44px">No matter where you are placed, your contribution helps make the event safer, stronger and more meaningful for everyone involved.</p>
+    <div class="grid g3">
+      <div class="stat">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#BFAE7A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
+        <b style="font-size:20px;text-transform:uppercase;display:block;margin-top:14px">Check In</b>
+        <p class="meta" style="margin-top:10px">Participant check in and registration as teams arrive on site.</p>
+      </div>
+      <div class="stat">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#BFAE7A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
+        <b style="font-size:20px;text-transform:uppercase;display:block;margin-top:14px">Course Support</b>
+        <p class="meta" style="margin-top:10px">Course and activity support across the obstacles and surprise events.</p>
+      </div>
+      <div class="stat">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#BFAE7A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
+        <b style="font-size:20px;text-transform:uppercase;display:block;margin-top:14px">Family Areas</b>
+        <p class="meta" style="margin-top:10px">Spectator and family area support, keeping the sideline welcoming.</p>
+      </div>
+      <div class="stat">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#BFAE7A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
+        <b style="font-size:20px;text-transform:uppercase;display:block;margin-top:14px">Hydration</b>
+        <p class="meta" style="margin-top:10px">Hydration station assistance, keeping every team on their feet.</p>
+      </div>
+      <div class="stat">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#BFAE7A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
+        <b style="font-size:20px;text-transform:uppercase;display:block;margin-top:14px">Pack Down</b>
+        <p class="meta" style="margin-top:10px">Event pack down and general event support once the dust settles.</p>
+      </div>
+      <div class="stat">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#BFAE7A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
+        <b style="font-size:20px;text-transform:uppercase;display:block;margin-top:14px">Key Moments</b>
+        <p class="meta" style="margin-top:10px">Supporting the team across the big moments of the weekend.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- [Slipstream] Volunteer EOI form: CF7 / Elementor Forms. Fields mirror live 2026 Volunteer EOI Form V4 -->
+<section class="sec sec-light" id="volunteer-form">
+  <div class="wrap">
+    <div style="max-width:820px">
+      <span class="kicker">2026 Volunteer Form</span>
+      <h2>Put Your Hand Up</h2>
+      <div class="rule"></div>
+      <p style="margin-bottom:32px">Fill out the form below and our team will be in touch with next steps, role options and run sheets closer to the event weekend.</p>
+      <form class="form form-panel" style="max-width:820px">
+        <div class="row2">
+          <div><label>First name *</label><input type="text" placeholder="First"></div>
+          <div><label>Last name *</label><input type="text" placeholder="Last"></div>
+        </div>
+        <div class="row2">
+          <div><label>Email *</label><input type="email" placeholder="you@email.com"></div>
+          <div><label>Phone</label><input type="tel" placeholder="04XX XXX XXX"></div>
+        </div>
+        <div class="row2">
+          <div>
+            <label>State *</label>
+            <select><option>Select state</option><option>ACT</option><option>NSW</option><option>NT</option><option>QLD</option><option>SA</option><option>TAS</option><option>VIC</option><option>WA</option></select>
+          </div>
+          <div>
+            <label>Are you a Veteran or currently serving? *</label>
+            <select><option>Select one</option><option>Yes</option><option>No</option></select>
+          </div>
+        </div>
+        <div>
+          <label>What are you interested in?</label>
+          <div style="display:flex;flex-direction:column;gap:10px;margin-top:6px">
+            <label class="meta" style="display:flex;align-items:center;gap:10px;text-transform:none;letter-spacing:0"><input type="checkbox"> Volunteering for the Saturday, 24 October</label>
+            <label class="meta" style="display:flex;align-items:center;gap:10px;text-transform:none;letter-spacing:0"><input type="checkbox"> Volunteering for the Sunday, 25 October</label>
+            <label class="meta" style="display:flex;align-items:center;gap:10px;text-transform:none;letter-spacing:0"><input type="checkbox"> Volunteering for both days, 24 and 25 October</label>
+          </div>
+        </div>
+        <div><label>Do you have any physical limitations?</label><input type="text" placeholder="Optional"></div>
+        <div><label>Let us know how you would like to help</label><textarea rows="5" placeholder="Additional comments"></textarea></div>
+        <div><button class="btn btn-gold" type="button">Submit</button></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- [Slipstream] Sponsor cross sell: Elementor CTA band. Copy: live Volunteer page footer prompt -->
+<section class="cta-band cta-gold">
+  <div class="wrap cta-in">
+    <div style="max-width:640px">
+      <span class="kicker">Business Or Brand?</span>
+      <h2>Step Up For Our Veteran Community</h2>
+      <p style="margin-top:16px">Sponsorship is the primary funding support behind the Veteran Games. Put your brand where it counts.</p>
+      <div class="btn-row" style="margin-top:26px">
+        <a class="btn btn-gold" href="06-become-a-sponsor.html">Become a Sponsor</a>
+        <a class="btn btn-line" href="07-donate.html">Donate</a>
+      </div>
+    </div>
+    <img src="../assets/img/general/calling.jpg" alt="Competitors at the Veteran Games" style="width:420px;border:1px solid rgba(19,19,21,.3)">
+  </div>
+</section>
+
+<!-- [Slipstream] Sponsors strip: TRX partners grid -->
+<section class="sec sec-light" style="padding:64px 0">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:34px">
+      <div><span class="kicker">Our Sponsors &amp; Partners</span></div>
+      <a class="btn btn-line btn-sm" href="05-our-sponsors.html">See All Sponsors</a>
+    </div>
+    <div class="logos logos-rail logos-clean">
+      <span class="lg"><img src="../assets/logos/sponsors/Sponsor-VFC.png" alt="Veterans First Consulting"></span>
+      <span class="lg"><img src="../assets/logos/sponsors/Sponsor-NT-gov.png" alt="Northern Territory Government"></span>
+      <span class="lg"><img src="../assets/logos/sponsors/Sponsor-valhalla.png" alt="Valhalla Tactical &amp; Outdoor"></span>
+      <span class="lg"><img src="../assets/logos/sponsors/Sponsor-high-sierra.png" alt="High Sierra"></span>
+      <span class="lg"><img src="../assets/logos/sponsors/Sponsor-savvy.png" alt="Savvy Beverages"></span>
+      <span class="lg"><img src="../assets/logos/sponsors/Sponsor-amb.png" alt="Australian Military Bank"></span>
+      <span class="lg"><img src="../assets/logos/sponsors/Sponsor-cmbt.png" alt="CMBT"></span>
+      <span class="lg"><img src="../assets/logos/sponsors/Sponsor-ffc.png" alt="Family First Care"></span>
+      <span class="lg"><img src="../assets/logos/sponsors/Sponsor-lifesavers.png" alt="Life Savers"></span>
+      <span class="lg"><img src="../assets/logos/sponsors/Sponsor-ringwood.png" alt="Ringwood RSL"></span>
+      <span class="lg"><img src="../assets/logos/sponsors/Sponsor-axon.png" alt="AXON Property Group"></span>
+      <span class="lg"><img src="../assets/logos/sponsors/Sponsor-greenbank.png" alt="Greenbank Services Club"></span>
+      <span class="lg"><img src="../assets/logos/sponsors/Sponsor-fuelyourlife.png" alt="Fuel Your Life"></span>
+      <span class="lg"><img src="../assets/logos/sponsors/Sponsor-good-joint.png" alt="The Good Joint"></span>
+      <span class="lg"><img src="../assets/logos/sponsors/Sponsor-inside-out.png" alt="Inside Out Active Recovery"></span>
+      <span class="lg"><img src="../assets/logos/sponsors/Sponsor-rsl-vic.png" alt="RSL Victoria"></span>
+      <span class="lg"><img src="../assets/logos/sponsors/Sponsor-jericho.png" alt="Jericho"></span>
+    </div>
+  </div>
+</section>
+
+<!-- [Slipstream] Footer (shared, see 01) -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-main">
+      <div>
+        <a class="logo" href="01-home.html"><img src="https://veterangames.com/wp-content/uploads/2020/05/veteran-footer-logo.png" alt="Veteran Games"></a>
+        <p class="meta">A Veteran Support Force initiative.<br>By Veterans. For Veterans.</p>
+        <div class="soc">
+          <a href="https://www.instagram.com/veterangames_/" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.4" fill="currentColor"/></svg></a>
+          <a href="https://facebook.com/veteran.games.vsf" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.6 22v-8.1h2.7l.4-3.2h-3.1V8.7c0-.9.3-1.6 1.6-1.6h1.7V4.3c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.2H7.5v3.2h2.7V22z"/></svg></a>
+          <a href="https://www.youtube.com/@veterangames" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="1.5" y="5" width="21" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M10 9.2l5.4 2.8L10 14.8z"/></svg></a>
+          <a href="https://www.linkedin.com/company/veteransupportforce/" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.9 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM3.2 9h3.4v11.5H3.2zM9.2 9h3.3v1.6h.1c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.4v6.4h-3.4v-5.7c0-1.4 0-3.1-1.9-3.1s-2.2 1.5-2.2 3v5.8H9.2z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="02-find-my-event.html">Find My Event</a></li>
+          <li><a href="03-the-experience.html">The Experience</a></li>
+          <li><a href="04-our-purpose.html">Our Purpose</a></li>
+          <li><a href="06-become-a-sponsor.html">Become a Sponsor</a></li>
+          <li><a href="12-volunteer.html">Volunteer</a></li>
+          <li><a href="07-donate.html">Donate</a></li>
+          <li><a href="09-shop.html">Shop</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get On The List</h4>
+        <p>Be the first to get notified of event updates, key information and exclusive opportunities.</p>
+        <form class="news-form">
+          <input type="text" placeholder="First name" aria-label="First name">
+          <input type="email" placeholder="Email address" aria-label="Email">
+          <button class="btn btn-gold btn-sm" type="button">Send</button>
+        </form>
+      </div>
+    </div>
+    <div class="ftr-legal">
+      <span><a href="https://vsf.org.au/">© Veteran Support Force Ltd.</a></span>
+      <span>
+        <a href="https://veterangames.com/privacy/">Privacy Policy</a> ·
+        <a href="https://veterangames.com/privacy-collection-statement/">Privacy Collection Statement</a> ·
+        <a href="https://veterangames.com/terms-and-conditions/">Terms + Conditions</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/vg.js"></script>
+</body>
+</html>
