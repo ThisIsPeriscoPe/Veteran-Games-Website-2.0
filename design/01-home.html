@@ -4,8 +4,8 @@
 Slipstream (ThemeREX) dark skin · Elementor · TEC · TRX Addons
 
 SWAP LIST (remote → local when supplied)
-  https://veterangames.com/wp-content/uploads/2023/04/vg-logo.png            → assets/logos/vg-logo.png
-  https://veterangames.com/wp-content/uploads/2020/05/veteran-footer-logo.png       → assets/logos/vg-footer-logo.png
+  Brand logo: LOCAL assets/logos/vg-logo.png (white mark, header + footer)
+  Favicon set: LOCAL assets/favicon/ (generated from the white master)
   Hero poster: LOCAL assets/img/hero/home-hero-poster.jpg (Drive: LitlCreative_VeteranGames_Day1-80)
   assets/video/hero-loop.mp4 (TO SUPPLY: 10 to 20s muted loop from 2025 highlights)
   Media logos: LOCAL assets/logos/news/PR-*.png (balanced transparent set, supplied by Joey)
@@ -20,14 +20,18 @@ SWAP LIST (remote → local when supplied)
 <meta charset="utf-8">
 <meta name="viewport" content="width=1440">
 <title>Home · Veteran Games</title>
-<link rel="stylesheet" href="css/vg.css?v=4">
+<link rel="icon" href="../assets/favicon/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/favicon/favicon-192x192.png">
+<link rel="apple-touch-icon" href="../assets/favicon/apple-touch-icon.png">
+<link rel="stylesheet" href="css/vg.css?v=6">
 </head>
 <body>
 
 <!-- [Slipstream] Header: Elementor header template · TRX Addons layouts menu · sticky on · dark scheme -->
 <header class="hdr">
   <div class="hdr-in">
-    <a class="logo" href="01-home.html"><img src="https://veterangames.com/wp-content/uploads/2023/04/vg-logo.png" alt="Veteran Games"></a>
+    <a class="logo" href="01-home.html"><img src="../assets/logos/vg-logo.png" alt="Veteran Games"></a>
     <ul class="nav">
       <li class="on"><a href="01-home.html">Home</a></li>
       <li><a href="02-find-my-event.html">Find My Event</a></li>
@@ -272,7 +276,7 @@ SWAP LIST (remote → local when supplied)
   <div class="wrap">
     <div class="ftr-main">
       <div>
-        <a class="logo" href="01-home.html"><img src="https://veterangames.com/wp-content/uploads/2020/05/veteran-footer-logo.png" alt="Veteran Games"></a>
+        <a class="logo" href="01-home.html"><img src="../assets/logos/vg-logo.png" alt="Veteran Games"></a>
         <p class="meta">A Veteran Support Force initiative.<br>By Veterans. For Veterans.</p>
         <div class="soc">
           <a href="https://www.instagram.com/veterangames_/" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.4" fill="currentColor"/></svg></a>

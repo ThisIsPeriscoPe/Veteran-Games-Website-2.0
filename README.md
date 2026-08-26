@@ -31,9 +31,12 @@ assets/
   img/hero/             page hero banners
   img/events/           event card images
   img/general/          section images
+  logos/vg-logo.png     Veteran Games mark, white version, used in header + footer
+  logos/veteran-games-logo-white.png / -black.png   full res masters
   logos/sponsors/       sponsor logo set, balanced 500x200 transparent PNGs
   logos/news/           press / As Featured In logo set, same treatment
   logos/VFC-main.png    presenting sponsor mark (rendered white via CSS filter)
+  favicon/              favicon set, .ico + 16/32/192/512 PNG + apple-touch-icon
   brand/palette.md      colour tokens
   brand/fonts.md        type rules
   video/                hero loop lives here once supplied
@@ -132,6 +135,10 @@ not substitute originals from the live site, they have baked backgrounds and inc
 
 Logo geometry in the header and footer is deliberately locked to explicit width and height with
 `object-fit:contain`, so the mark cannot distort under layout pressure. Keep that pattern.
+
+The favicon set was generated from the white master, centred on the brand coal (`#131315`) with
+10% padding, because a transparent mark disappears against dark browser chrome. Full res masters
+of the mark (white and black) sit alongside `vg-logo.png` if you need other sizes.
 
 A handful of images still load from `veterangames.com` where no original was available. They are
 listed per file in the SWAP LIST comments.

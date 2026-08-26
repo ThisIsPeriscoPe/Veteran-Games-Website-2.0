@@ -54,7 +54,7 @@ h4{font-weight:700;font-size:18px}
 /* Logo geometry is locked, never derived from layout. The global img{max-width:100%}
    plus a fixed height inside a flex row squeezes width while height holds, which warps
    the mark. Explicit width + height + object-fit:contain makes distortion impossible.
-   Header logo source is 397x338 (1.175:1) → 66x56. */
+   Logo source assets/logos/vg-logo.png is 1.182:1 → header 66x56, footer 87x74. */
 .hdr .logo{flex:0 0 auto;display:flex;align-items:center}
 .hdr .logo img{width:66px;height:56px;max-width:none;object-fit:contain;flex-shrink:0}
 .hdr-in>.btn{flex:0 0 auto}
@@ -230,8 +230,8 @@ h4{font-weight:700;font-size:18px}
 /* ---------- Footer (Slipstream: Elementor footer template) ---------- */
 .ftr{background:var(--vg-coal);border-top:1px solid var(--vg-line)}
 .ftr-main{display:grid;grid-template-columns:1.1fr .9fr 1.4fr;gap:64px;padding:76px 0 56px}
-/* Footer logo source is 580x300 (1.933:1) → 143x74. Geometry locked, see header note */
-.ftr .logo img{width:143px;height:74px;max-width:none;object-fit:contain;margin-bottom:20px}
+/* Same mark as the header, 1.182:1 → 87x74. Geometry locked, see header note */
+.ftr .logo img{width:87px;height:74px;max-width:none;object-fit:contain;margin-bottom:20px}
 .ftr h4{margin-bottom:18px;font-size:15px;letter-spacing:.14em}
 .ftr ul{list-style:none;display:flex;flex-direction:column;gap:10px}
 .ftr ul a{color:var(--vg-grey);font-size:14px}
@@ -299,3 +299,19 @@ h4{font-weight:700;font-size:18px}
 .form-panel{background:var(--vg-panel);border:1px solid var(--vg-line);padding:40px}
 .sec-light .info-tile{background:#fff;border-color:#E2DED2;border-left-color:var(--vg-gold-deep)}
 .sec-light .form-panel{background:#fff;border-color:#E2DED2}
+
+/* ---------- 404 (13) — Slipstream: Theme Options > 404 page, or Elementor 404 template ---------- */
+/* Type only, no illustration. The numeral is Montserrat 800 set large and tight;
+   nothing here is an image, so it scales and recolours with the theme. */
+.e404{min-height:calc(100vh - 86px);display:flex;align-items:center;text-align:center}
+.e404 .wrap{width:100%;padding-top:80px;padding-bottom:80px}
+.e404-num{font-weight:800;font-size:190px;line-height:.9;letter-spacing:.02em;color:var(--vg-gold);text-transform:uppercase}
+.e404 h1{font-size:52px;margin-top:26px}
+.e404 .rule{width:120px;margin:26px auto}
+.e404 .lead{max-width:560px;margin:0 auto}
+.e404 .btn-row{justify-content:center;margin-top:36px}
+.e404-links{margin-top:52px;padding-top:30px;border-top:1px solid var(--vg-line);display:flex;gap:30px;justify-content:center;flex-wrap:wrap}
+.e404-links a{font-weight:600;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--vg-grey)}
+.e404-links a:hover{color:var(--vg-gold)}
+.sec-light .e404-num{color:var(--vg-gold-deep)}
+.sec-light .e404-links{border-top-color:#E2DED2}
