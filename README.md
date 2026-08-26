@@ -22,9 +22,9 @@ Prepared by Periscope · July 2026
 ## What is in the box
 
 ```
-design/                 12 page templates + prototype index
+design/                 13 page templates + prototype index
   00-index.html         template index (not a site page, delete before build)
-  01-home.html          … 12-volunteer.html
+  01-home.html          … 13-404.html
   css/vg.css            the entire design system (see below)
   js/vg.js              prototype only interactions, do not port
 assets/
@@ -40,6 +40,8 @@ assets/
   brand/palette.md      colour tokens
   brand/fonts.md        type rules
   video/                hero loop lives here once supplied
+404.html                GitHub Pages catch-all, generated from design/13-404.html
+                        with root absolute paths. Deploy file only, not a handoff template.
 Fonts/                  Montserrat OTFs (licensed, supplied by client)
 videos.md               every YouTube embed ID and where it is placed
 ```
@@ -62,6 +64,7 @@ videos.md               every YouTube embed ID and where it is placed
 | 10 | Contact | Details + form |
 | 11 | Event Info | **Template**, populated with National Finals as the exemplar |
 | 12 | Volunteer | Roles + volunteer EOI form |
+| 13 | 404 | Page not found. Type only, no illustration. Must return HTTP 404 |
 
 **Navigation (exact, one line at 1440):**
 Home · Find My Event · The Experience · Our Purpose · Show Your Support (Become a Sponsor /
