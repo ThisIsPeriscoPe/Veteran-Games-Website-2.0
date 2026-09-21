@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# Gallery masters: full resolution originals from the photographer.
+# 5.4GB, far beyond GitHub's limits. Delivered via Google Drive, not the repo.
+# Web renditions (thumb + large) under *-web/ ARE tracked and are what the site uses.
+assets/img/gallery/*/[!_]*/
+!assets/img/gallery/*-web/
+!assets/img/gallery/*-web/**
+
+# Loose source photos dropped in the project root
+/*.jpg
+/*.jpeg
+/*.png

@@ -300,6 +300,34 @@ h4{font-weight:700;font-size:18px}
 .sec-light .info-tile{background:#fff;border-color:#E2DED2;border-left-color:var(--vg-gold-deep)}
 .sec-light .form-panel{background:#fff;border-color:#E2DED2}
 
+/* ---------- Photo gallery (past event recap) ----------
+   Slipstream mapping: TRX Addons Gallery / Elementor Gallery widget, masonry skin,
+   category filters + built in lightbox. Images are tagged once in WordPress (event +
+   team) and the filter bar comes from those categories. The prototype reproduces the
+   same behaviour from a static manifest so the layout can be reviewed at full scale. */
+.gal-filters{display:flex;flex-direction:column;gap:14px;margin-bottom:12px}
+.gal-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.gal-row > span{font-weight:600;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--vg-grey-dim);min-width:74px}
+.gal-count{font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--vg-grey);margin:26px 0 18px}
+.gal{columns:4;column-gap:14px}
+.gal .gi{display:block;position:relative;margin:0 0 14px;break-inside:avoid;background:var(--vg-panel);overflow:hidden}
+.gal .gi img{width:100%;height:auto;display:block;transition:transform .45s ease,opacity .2s}
+.gal .gi:hover img{transform:scale(1.04)}
+.gal .gi::after{content:"";position:absolute;inset:0;border:1px solid transparent;transition:.2s}
+.gal .gi:hover::after{border-color:var(--vg-gold)}
+.gal-more{display:flex;justify-content:center;margin-top:34px}
+.gal-empty{padding:60px 0;text-align:center;color:var(--vg-grey)}
+/* Lightbox: prototype stand in for the theme's native lightbox */
+.lbx{position:fixed;inset:0;z-index:200;background:rgba(8,8,9,.95);display:none;align-items:center;justify-content:center}
+.lbx.on{display:flex}
+.lbx img{max-width:88vw;max-height:86vh;object-fit:contain}
+.lbx-close,.lbx-prev,.lbx-next{position:absolute;background:transparent;border:1px solid rgba(255,255,255,.28);color:#fff;width:52px;height:52px;cursor:pointer;font-size:22px;line-height:1;transition:.15s}
+.lbx-close:hover,.lbx-prev:hover,.lbx-next:hover{border-color:var(--vg-gold);color:var(--vg-gold)}
+.lbx-close{top:26px;right:30px}
+.lbx-prev{left:30px;top:50%;transform:translateY(-50%)}
+.lbx-next{right:30px;top:50%;transform:translateY(-50%)}
+.lbx-cap{position:absolute;bottom:24px;left:0;right:0;text-align:center;font-weight:600;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--vg-grey)}
+
 /* ---------- 404 (13) — Slipstream: Theme Options > 404 page, or Elementor 404 template ---------- */
 /* Type only, no illustration. The numeral is Montserrat 800 set large and tight;
    nothing here is an image, so it scales and recolours with the theme. */
