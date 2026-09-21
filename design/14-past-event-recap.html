@@ -15,8 +15,10 @@ with the "recap" layout. Gallery = TRX Addons / Elementor Gallery widget,
 masonry skin, category filters (event + team) and native lightbox.
 
 SWAP LIST (remote → local when supplied)
-  Recap video: 2025 Darwin cut used as placeholder. TO SUPPLY: 2026 Darwin Heats
-  recap, His Honour piece and champion team video (all referenced in the recap EDM)
+  Hero: LOCAL assets/img/hero/darwin-recap-hero.jpg (Ninja Wall 109, 16:9 crop of the master).
+  Placeholder until the 2026 recap video lands. TO SUPPLY: Darwin Heats recap, His Honour
+  piece and champion team video (all referenced in the recap EDM), then swap the hero
+  image block back to a .vid video widget
   Gallery: LOCAL assets/img/gallery/darwin-2026-web/ (thumb + large + manifest.js)
   Masters (5.4GB, not for the build) live in assets/img/gallery/darwin-2026/
   NT Gov hero mark: reversed version, Sponsor-NT-gov-white.png
@@ -58,9 +60,8 @@ SWAP LIST (remote → local when supplied)
   <div class="wrap">
     <div style="display:flex;align-items:end;justify-content:space-between;gap:40px;margin-bottom:34px">
       <div>
-        <span class="badge" style="margin-bottom:14px">Completed</span>
-        <span class="kicker">2026 Darwin Heats · Event Recap</span>
-        <h1 style="font-size:62px">That's<br><span class="gold">A Wrap</span></h1>
+        <span class="kicker">Event Recap</span>
+        <h1 style="font-size:62px">Darwin Heats<br><span class="gold">2026</span></h1>
       </div>
       <div style="text-align:right">
         <p class="meta" style="font-weight:600;color:var(--vg-grey)">Friday 18 September, 2026</p>
@@ -72,9 +73,9 @@ SWAP LIST (remote → local when supplied)
         </div>
       </div>
     </div>
-    <div class="vid">
-      <iframe src="https://www.youtube.com/embed/lhJfEWd0hW8" title="Darwin Heats recap" allowfullscreen loading="lazy"></iframe>
-    </div>
+    <!-- Hero image placeholder. Swap back to a .vid video widget once the 2026 Darwin
+         recap cut is on YouTube (see swap list). Same 16:9 block either way. -->
+    <img src="../assets/img/hero/darwin-recap-hero.jpg" alt="Teams working the Ninja Wall at the Darwin Heats" style="width:100%;aspect-ratio:16/9;object-fit:cover;border:1px solid var(--vg-line)">
   </div>
 </section>
 
