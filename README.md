@@ -184,7 +184,5 @@ spec so the archive does not compound as the series grows. Full detail is commen
    pagination with tag filters.
 4. **Batches of 60** rendered per load.
 5. **Default view is a curated highlight set** (~180 for Darwin, a "Highlights" media
-   category). Event and team sets load only when filtered, so one team's set is the most
-   that ever loads.
-6. **Full unedited set stays in Drive**, linked from the page.
-7. **Ageing off:** after 18 months a page drops to ~60 highlights and links to Drive.
+   category). Every photo is on the page, but event and team sets load only when filtered,
+   so one team's set is the most that ever loads.

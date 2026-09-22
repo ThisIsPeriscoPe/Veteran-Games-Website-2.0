@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- ================================================================
-02 FIND MY EVENT · Veteran Games Website 2.0 · desktop 1440
+02 FIND AN EVENT · Veteran Games Website 2.0 · desktop 1440
 Slipstream dark skin · TEC events list view + filter bar
 Ticketing rule: Race Roster = participants (Compete) · Eventbrite = spectators (entry by donation)
 Per event ticketing CTAs = APPROVED CUSTOM ARRANGEMENT of native widgets.
@@ -14,7 +14,7 @@ SWAP LIST (remote → local when supplied)
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=1440">
-<title>Find My Event · Veteran Games</title>
+<title>Find An Event · Veteran Games</title>
 <link rel="icon" href="../assets/favicon/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/favicon/favicon-192x192.png">
@@ -29,7 +29,7 @@ SWAP LIST (remote → local when supplied)
     <a class="logo" href="01-home.html"><img src="../assets/logos/vg-logo.png" alt="Veteran Games"></a>
     <ul class="nav">
       <li><a href="01-home.html">Home</a></li>
-      <li class="on"><a href="02-find-my-event.html">Find My Event</a></li>
+      <li class="on"><a href="02-find-my-event.html">Find An Event</a></li>
       <li><a href="03-the-experience.html">The Experience</a></li>
       <li><a href="04-our-purpose.html">Our Purpose</a></li>
       <li><a href="05-our-sponsors.html">Show Your Support</a>
@@ -47,7 +47,7 @@ SWAP LIST (remote → local when supplied)
   <img class="hero-img" src="../assets/img/hero/find-event-hero.jpg" alt="">
   <div class="wrap">
     <span class="kicker">2026 Series Calendar</span>
-    <h1>Find My <span class="gold">Event</span></h1>
+    <h1>Find An <span class="gold">Event</span></h1>
     <p class="hero-sub">Compete as a team of 8 or back them from the sideline. Pick your city and lock it in.</p>
   </div>
 </section>
@@ -55,9 +55,12 @@ SWAP LIST (remote → local when supplied)
 <section class="sec sec-light" id="compete">
   <div class="wrap">
 
-    <!-- [Slipstream] Filter bar: TEC events bar (date, venue) + TRX select filters. Static UI in prototype -->
+    <!-- [Slipstream] Filter bar: TEC events bar (date, venue) + TRX select filters. Static UI in prototype.
+     Date range = "Upcoming events" (future dated only) then one option per year, newest
+     first. Years populate from the event archive, so 2027 and 2028 appear as those
+     events are added. Production: TEC date filter / tribe_events year archive query. -->
     <div class="filter" id="spectate">
-      <div><label>Date range</label><br><select><option>All 2026</option><option>July</option><option>September</option><option>October</option></select></div>
+      <div><label>Date range</label><br><select><option>Upcoming events</option><option>2026</option></select></div>
       <div><label>Location</label><br><select><option>All locations</option><option>QLD</option><option>NT</option><option>United Kingdom</option></select></div>
       <div style="flex:1"><label>Search</label><br><input type="text" placeholder="Search events"></div>
     </div>
@@ -114,8 +117,6 @@ SWAP LIST (remote → local when supplied)
         <a class="btn btn-white btn-sm" href="11-event-info.html">Event Recap</a>
       </div>
     </div>
-
-    <p class="meta" style="margin-top:26px">Compete entries via Race Roster. Spectator entry by donation via Eventbrite. Teams of 8.</p>
   </div>
 </section>
 
@@ -147,7 +148,7 @@ SWAP LIST (remote → local when supplied)
       <div>
         <h4>Explore</h4>
         <ul>
-          <li><a href="02-find-my-event.html">Find My Event</a></li>
+          <li><a href="02-find-my-event.html">Find An Event</a></li>
           <li><a href="03-the-experience.html">The Experience</a></li>
           <li><a href="04-our-purpose.html">Our Purpose</a></li>
           <li><a href="06-become-a-sponsor.html">Become a Sponsor</a></li>
