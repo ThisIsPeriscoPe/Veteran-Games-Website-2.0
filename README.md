@@ -22,9 +22,9 @@ Prepared by Periscope · July 2026
 ## What is in the box
 
 ```
-design/                 13 page templates + prototype index
+design/                 14 page templates + prototype index
   00-index.html         template index (not a site page, delete before build)
-  01-home.html          … 13-404.html
+  01-home.html          … 14-past-event-recap.html
   css/vg.css            the entire design system (see below)
   js/vg.js              prototype only interactions, do not port
 assets/
@@ -65,6 +65,7 @@ videos.md               every YouTube embed ID and where it is placed
 | 11 | Event Info | **Template**, populated with National Finals as the exemplar |
 | 12 | Volunteer | Roles + volunteer EOI form |
 | 13 | 404 | Page not found. Type only, no illustration. Must return HTTP 404 |
+| 14 | Past Event Recap | **Template** for completed events. Populated with Darwin Heats. Filterable photo gallery, see Gallery at scale below |
 
 **Navigation (exact, one line at 1440):**
 Home · Find My Event · The Experience · Our Purpose · Show Your Support (Become a Sponsor /
@@ -164,3 +165,26 @@ listed per file in the SWAP LIST comments.
   from Elementor Accordion, TRX post filters and WordPress asset versioning. Do not port it.
 - `?v=` query strings on the stylesheet link are prototype cache busting. Drop them.
 - `design/00-index.html` is a contact sheet, not a page.
+
+---
+
+## Gallery at scale (past event pages)
+
+Archived event pages carry large photo sets. The prototype's gallery is built to this
+spec so the archive does not compound as the series grows. Full detail is commented in
+`design/14-past-event-recap.html` above the gallery section.
+
+1. **No masters in the media library.** Cap uploads at 1600px long edge, WebP, and
+   disable unused intermediate sizes. Darwin: 5.4GB of masters vs ~150MB as WebP.
+2. **Offload media** to object storage (WP Offload Media / Media Cloud → Cloudflare R2,
+   S3 or Spaces). WordPress keeps the media records, categories, filters and lightbox,
+   so the theme UI is unchanged. Files leave the web server and the backups.
+3. **Filter as a query, not as CSS.** No gallery plugin that prints every image and
+   hides non matches with JS. FooGallery, Envira Pro and Modula Pro all do AJAX
+   pagination with tag filters.
+4. **Batches of 60** rendered per load.
+5. **Default view is a curated highlight set** (~180 for Darwin, a "Highlights" media
+   category). Event and team sets load only when filtered, so one team's set is the most
+   that ever loads.
+6. **Full unedited set stays in Drive**, linked from the page.
+7. **Ageing off:** after 18 months a page drops to ~60 highlights and links to Drive.

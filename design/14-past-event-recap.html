@@ -133,18 +133,46 @@ SWAP LIST (remote → local when supplied)
 <!-- [Slipstream] Photo gallery: TRX Addons / Elementor Gallery widget, masonry skin.
      Filters map to WordPress media categories (event + team). Native lightbox.
      data-base points at the rendition folder; manifest.js is the prototype stand in
-     for the media library query. -->
+     for the media library query.
+
+     ============ PRODUCTION SPEC, PLEASE REVIEW ============
+     Written so archived event pages do not compound as the series grows.
+
+     1. NO MASTERS IN THE MEDIA LIBRARY. Upload capped at 1600px long edge, WebP.
+        Darwin masters are 5.4GB; the same set as web renditions is ~420MB, and as
+        WebP nearer 150MB. Disable the intermediate sizes the theme does not use
+        (WP generates 5 to 7 files per upload by default).
+     2. OFFLOAD MEDIA to object storage (WP Offload Media or Media Cloud → Cloudflare
+        R2 / S3 / Spaces). WordPress keeps the media records, categories, filters and
+        lightbox, so the theme UI is unchanged. Files leave the web server and the
+        nightly backup. R2 is ~$0.015/GB/month, no egress fees.
+     3. FILTER AS A QUERY, NOT AS CSS. Do not use a gallery that prints every image
+        then hides non matches with JS: 1500 img tags on load will crawl whatever the
+        lazy loading does. Filters must re-query and return a page of results
+        (FooGallery, Envira Pro and Modula Pro all do AJAX pagination + tag filters).
+     4. BATCHES OF 60. 60 rendered on first paint (~2.7MB at current thumb weight),
+        60 more per Load More.
+     5. DEFAULT VIEW IS THE CURATED HIGHLIGHT SET (~180 here, marked hl:1 in the
+        manifest → a "Highlights" media category in WordPress). Full event and team
+        sets load only when that filter is chosen, so a single team's set is all that
+        ever loads, never the whole archive.
+     6. FULL UNEDITED SET stays in Drive and is linked below, for participants who
+        want every frame.
+     7. AGEING OFF: after 18 months an event page drops to a ~60 image highlight set
+        and links to Drive for the rest.
+     ======================================================== -->
 <section class="sec sec-coal" style="padding-top:0">
   <div class="wrap">
-    <span class="kicker">Full Gallery</span>
+    <span class="kicker">Photo Gallery</span>
     <h2 style="margin-bottom:12px">Every Angle Of The Day</h2>
-    <p style="max-width:720px;margin-bottom:34px">Filter by event or find your team. Click any photo to open it full size.</p>
+    <p style="max-width:720px;margin-bottom:34px">A selection from across the day. Filter by event or find your team to see the full set, and click any photo to open it full size.</p>
 
     <div id="gallery" data-base="../assets/img/gallery/darwin-2026-web">
       <div class="gal-filters">
         <div class="gal-row" data-key="e">
           <span>Event</span>
-          <button class="tab on" data-val="all">All</button>
+          <button class="tab on" data-val="hl">Highlights</button>
+          <button class="tab" data-val="all">All Photos</button>
           <button class="tab" data-val="100m Obstacle">100m Obstacle</button>
           <button class="tab" data-val="Ninja Wall">Ninja Wall</button>
           <button class="tab" data-val="Tug Of War">Tug Of War</button>
@@ -175,6 +203,8 @@ SWAP LIST (remote → local when supplied)
       <div class="gal"></div>
       <div class="gal-more"><button class="btn btn-line" type="button">Load More Photos</button></div>
     </div>
+    <!-- Full unedited set lives off the site. Swap href for the client's Drive link -->
+    <p class="meta" style="margin-top:34px">Want every frame from the day? <a class="gold" href="https://drive.google.com/drive/folders/1gLqwvC8ZrseYerDx6BT0moXG0U0StABJ" target="_blank" rel="noopener" style="text-decoration:underline">Browse the full gallery on Drive</a></p>
   </div>
 </section>
 

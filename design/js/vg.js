@@ -18,14 +18,15 @@
   var host = document.getElementById('gallery');
   if (!host || !window.VG_GALLERY) return;
   var base = host.dataset.base, STEP = 60, shown = STEP;
-  var f = { e: 'all', t: 'all' };
+  var f = { e: 'hl', t: 'all' };   // opens on the curated highlight set, not the full archive
   var grid = host.querySelector('.gal'),
       count = host.querySelector('.gal-count'),
       moreWrap = host.querySelector('.gal-more'),
       more = moreWrap.querySelector('button');
 
   function matches(r) {
-    return (f.e === 'all' || r.e === f.e) && (f.t === 'all' || (r.t || []).indexOf(f.t) > -1);
+    var byEvent = f.e === 'all' || (f.e === 'hl' ? r.hl === 1 : r.e === f.e);
+    return byEvent && (f.t === 'all' || (r.t || []).indexOf(f.t) > -1);
   }
   function render() {
     var list = window.VG_GALLERY.filter(matches);
