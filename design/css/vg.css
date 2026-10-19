@@ -343,3 +343,36 @@ h4{font-weight:700;font-size:18px}
 .e404-links a:hover{color:var(--vg-gold)}
 .sec-light .e404-num{color:var(--vg-gold-deep)}
 .sec-light .e404-links{border-top-color:#E2DED2}
+
+/* ---------- Live stream hero (01b) — camera viewfinder overlay ----------
+   Slipstream mapping: Elementor HTML widget inside the hero section (or section custom CSS).
+   Decorative only: corner brackets, centre crosshair and a LIVE tag whose red dot flashes
+   like a camera's record light. Sits above the video and gradient, below the copy. */
+.hero-live{--cam-in:32px;--cam-arm:56px;--cam-w:3px}
+.cam{position:absolute;inset:var(--cam-in);z-index:2;pointer-events:none}
+.hero-live .wrap{z-index:3}
+.hero-live .hero-sub{max-width:500px}
+.cam-c{position:absolute;width:var(--cam-arm);height:var(--cam-arm);border:0 solid rgba(255,255,255,.92)}
+.cam-tl{top:0;left:0;border-top-width:var(--cam-w);border-left-width:var(--cam-w)}
+.cam-tr{top:0;right:0;border-top-width:var(--cam-w);border-right-width:var(--cam-w)}
+.cam-bl{bottom:0;left:0;border-bottom-width:var(--cam-w);border-left-width:var(--cam-w)}
+.cam-br{bottom:0;right:0;border-bottom-width:var(--cam-w);border-right-width:var(--cam-w)}
+.cam-x{position:absolute;left:50%;top:50%;width:26px;height:26px;transform:translate(-50%,-50%)}
+.cam-x::before,.cam-x::after{content:"";position:absolute;background:rgba(255,255,255,.8)}
+.cam-x::before{left:50%;top:0;width:2px;height:100%;margin-left:-1px}
+.cam-x::after{top:50%;left:0;height:2px;width:100%;margin-top:-1px}
+.cam-live{position:absolute;top:22px;left:30px;display:flex;align-items:center;gap:10px;font-weight:800;font-size:15px;letter-spacing:.1em;line-height:1;text-transform:uppercase;color:#fff}
+.cam-live i{width:12px;height:12px;border-radius:50%;background:#E5212B;box-shadow:0 0 10px rgba(229,33,43,.7);animation:cam-rec 1.2s steps(1,end) infinite}
+@keyframes cam-rec{50%{opacity:0}}
+/* Video: fills the banner (cover, centred). The banner keeps its normal size at every breakpoint.
+   The supplied loop is 4:5, so desktop trims a little top and bottom, mobile trims a little off the sides.
+   Elementor: container Background Type = Video, Play On Mobile ON, fallback image = live-stream-poster.jpg */
+.hero-live video{object-position:50% 50%}
+/* Crosshair would sit on the copy once the layout narrows */
+@media (max-width:1279px){.cam-x{display:none}}
+@media (max-width:767px){
+  .hero-live{--cam-in:12px;--cam-arm:32px;--cam-w:2px}
+  .cam-live{top:14px;left:18px;gap:8px;font-size:12px}
+  .cam-live i{width:9px;height:9px}
+}
+@media (prefers-reduced-motion:reduce){.cam-live i{animation:none}}
