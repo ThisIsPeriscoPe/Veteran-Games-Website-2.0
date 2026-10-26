@@ -24,7 +24,7 @@ SWAP LIST (remote → local when supplied)
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/favicon/favicon-192x192.png">
 <link rel="apple-touch-icon" href="../assets/favicon/apple-touch-icon.png">
-<link rel="stylesheet" href="css/vg.css?v=7">
+<link rel="stylesheet" href="css/vg.css?v=8">
 </head>
 <body>
 
@@ -50,21 +50,26 @@ SWAP LIST (remote → local when supplied)
 <!-- [Slipstream] Hero: Elementor section, background video (self hosted mp4) + overlay · heading + dual buttons -->
 <section class="hero">
   <!-- Poster: drop your sourced image at assets/img/hero/home-hero-poster.jpg and it appears here -->
-  <!-- Post-Finals state: Finals photo (231026_VGFinals_Sunday_VFY-4) in place of the hero loop.
-       Evergreen version (restore when 2027 is live):
-       <video autoplay muted loop playsinline poster="../assets/img/hero/home-hero-poster.jpg?v=6"><source src="../assets/video/hero-loop.mp4" type="video/mp4"></video> -->
-  <img class="hero-img" src="../assets/img/finals-2026/home-hero-finals.jpg" alt="Veterans For Youth taking the boat over the cargo net at the 2026 National Finals">
+  <!-- Season wrap up state (from 26 Oct 2026 until 2027 events are live).
+       Background = Elementor section Background Type: Slideshow (fade, 6s per slide,
+       Ken Burns on), 4 photos from across the 2026 season, pre darkened for copy contrast.
+       Evergreen version (restore when 2027 is live): kicker "By Veterans. For Veterans.",
+       H1 "Your Next Mission Starts Here", hero-loop.mp4 video background, Find Your Next Event. -->
+  <div class="hero-slides" aria-hidden="true">
+    <img src="../assets/img/hero/season-2026/01-finals-cargo-net.jpg" alt="">
+    <img src="../assets/img/hero/season-2026/02-darwin-ninja-wall.jpg" alt="">
+    <img src="../assets/img/hero/season-2026/03-gold-coast-net.jpg" alt="">
+    <img src="../assets/img/hero/season-2026/04-finals-wall.jpg" alt="">
+  </div>
   <div class="wrap">
     <div>
-      <!-- Post-Finals state (from 26 Oct 2026): hero + CTAs point at the 2026 Finals recap.
-           Revert to the evergreen "Your Next Mission Starts Here" copy once 2027 events are live. -->
-      <span class="kicker">2026 National Finals · Sunshine Coast</span>
-      <h1>What A<br>Weekend.<br><span class="gold">2026 Finals</span></h1>
-      <p class="hero-sub">Congratulations to Veterans For Youth, the 2026 Veteran Games Champions. Relive two massive days at Sunshine Coast Stadium with the results, highlights and full replays.</p>
+      <span class="kicker">2026 Season Wrap Up</span>
+      <h1>That's A<br>Wrap On<br><span class="gold">2026</span></h1>
+      <p class="hero-sub">From the Gold Coast heats and the UK expedition to Darwin and the National Finals on the Sunshine Coast. Thank you to every competitor, volunteer, sponsor and supporter who was part of it.</p>
     </div>
     <div class="btn-row">
-      <a class="btn btn-gold" href="15-finals-recap.html">See The Finals Recap</a>
-      <a class="btn btn-white" href="15-finals-recap.html#watch">Watch The Replays</a>
+      <a class="btn btn-gold" href="15-finals-recap.html">Relive The 2026 Finals</a>
+      <a class="btn btn-white" href="10-contact.html?enquiry=2027#contact-form">Register Interest For 2027</a>
     </div>
     <!-- [Slipstream] Presenting sponsor lockup: Elementor text + image inline. VFC-main.png with white overlay (CSS filter). Legally required early placement -->
     <div style="display:flex;align-items:center;gap:16px;margin-top:40px">
@@ -99,7 +104,7 @@ SWAP LIST (remote → local when supplied)
 <section class="sec sec-light">
   <div class="wrap">
     <div class="sec-head">
-      <div><span class="kicker">2026 Series</span><h2>That's A Wrap</h2></div>
+      <div><span class="kicker">2026 Series</span><h2>The 2026 Season</h2></div>
       <a class="btn btn-line btn-sm" href="02-find-my-event.html">See The Full Calendar</a>
     </div>
     <div class="rail">
