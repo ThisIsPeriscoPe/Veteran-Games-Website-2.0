@@ -62,7 +62,7 @@ videos.md               every YouTube embed ID and where it is placed
 | 08 | News & Media | Filterable post grid |
 | 09 | Shop | WooCommerce grid, external checkout at shop.vsf.org.au |
 | 10 | Contact | Details + form |
-| 11 | Event Info | **Template**, populated with National Finals as the exemplar |
+| 11 | Event Info | Removed 26 Oct 2026: no event details page until 2027 events are confirmed (restore from git history, commit ec1122d) |
 | 12 | Volunteer | Roles + volunteer EOI form |
 | 13 | 404 | Page not found. Type only, no illustration. Must return HTTP 404 |
 | 14 | Past Event Recap | **Template** for completed events. Populated with Darwin Heats. Filterable photo gallery, see Gallery at scale below |
