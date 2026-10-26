@@ -139,6 +139,9 @@ Gold accent is `#BFAE7A`. Headings max out at **ExtraBold 800**, Black is retire
   site of its own). Family First Care is no longer a sponsor. On the live site the global
   marquee (elementor-global-12468) is still missing VPA Australia and Tactical Physio, has
   no links, and the old National Finals page has its own copy that still shows Family First Care
+  Cross-checked against Katie's Finals stage sponsor wall (21 Oct): all 21 sponsors on the wall
+  are in the rails. **Open question (Katie):** The Good Joint is on the live Our Sponsors page
+  but not on the wall. Is it still a current sponsor?
 - **2027:** yet to be announced, our 5th year, to be celebrated in a big way. **No heats
   planned at this stage**, so no "Heats" or "Series" wording for 2027. Register Your
   Interest covers competitors, existing teams, the Finals Vendor Village (Veteran brands,
