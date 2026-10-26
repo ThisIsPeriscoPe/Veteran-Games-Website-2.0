@@ -58,8 +58,10 @@ SWAP LIST (remote → local when supplied)
     <!-- [Slipstream] Filter bar: TEC events bar (date, venue) + TRX select filters. Static UI in prototype.
      Date range = "Upcoming events" (future dated only) then one option per year, newest
      first. Years populate from the event archive, so 2027 and 2028 appear as those
-     events are added. Production: TEC date filter / tribe_events year archive query. -->
-    <div class="filter" id="spectate">
+     events are added. Production: TEC date filter / tribe_events year archive query.
+     HIDDEN for now (Joey, 26 Oct 2026): not needed until there are enough events to filter.
+     Remove style="display:none" to bring it back. -->
+    <div class="filter" id="spectate" style="display:none">
       <div><label>Date range</label><br><select><option>Upcoming events</option><option>2026</option></select></div>
       <div><label>Location</label><br><select><option>All locations</option><option>QLD</option><option>NT</option><option>United Kingdom</option></select></div>
       <div style="flex:1"><label>Search</label><br><input type="text" placeholder="Search events"></div>
