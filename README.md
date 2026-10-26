@@ -125,9 +125,18 @@ Gold accent is `#BFAE7A`. Headings max out at **ExtraBold 800**, Black is retire
 - **Teams of 8**. Do not mention reserves or teams of 10
 - **No dashes of any kind** in body copy
 - Spectator entry is **by donation**, never "free"
-- "Presented by Veterans First Consulting" must appear early on Home and on Event Info
+- "Presented by Veterans First Consulting" must appear early on Home and on event pages
   (contractual)
 - Race Roster = competitor entries · Eventbrite = spectators
+- **Event names (client feedback, 26 Oct 2026):** Gold Coast Heats · Darwin Heats ·
+  UK Expedition Event · 2026 Finals - Sunshine Coast Stadium (the hyphen in this event
+  title is the client's, the no-dash rule still applies to body copy)
+- Winning team = **Champions** / **Champion Team**. Veterans competing = **Competitors**.
+  Teams competing = **Teams**
+- **2027:** yet to be announced, our 5th year, to be celebrated in a big way. **No heats
+  planned at this stage**, so no "Heats" or "Series" wording for 2027. Register Your
+  Interest covers competitors, existing teams, the Finals Vendor Village (Veteran brands,
+  businesses, groups), sponsors and volunteers
 
 ---
 
