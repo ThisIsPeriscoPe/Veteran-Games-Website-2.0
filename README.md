@@ -133,6 +133,12 @@ Gold accent is `#BFAE7A`. Headings max out at **ExtraBold 800**, Black is retire
   title is the client's, the no-dash rule still applies to body copy)
 - Winning team = **Champions** / **Champion Team**. Veterans competing = **Competitors**.
   Teams competing = **Teams**
+- **Sponsors (26 Oct 2026):** the live Our Sponsors page is the master list (22 sponsors
+  in tier order). Every sponsor rail uses all 22, each logo linking to the sponsor. Medi Skills
+  and Tactical Physio only have Instagram. Eildon RSL Sub Branch links to RSL Victoria (no
+  site of its own). Family First Care is no longer a sponsor. On the live site the global
+  marquee (elementor-global-12468) is still missing VPA Australia and Tactical Physio, has
+  no links, and the old National Finals page has its own copy that still shows Family First Care
 - **2027:** yet to be announced, our 5th year, to be celebrated in a big way. **No heats
   planned at this stage**, so no "Heats" or "Series" wording for 2027. Register Your
   Interest covers competitors, existing teams, the Finals Vendor Village (Veteran brands,
