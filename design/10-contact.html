@@ -34,7 +34,7 @@ SWAP LIST (remote → local when supplied)
       <li><a href="09-shop.html">Shop</a></li>
       <li class="on"><a href="10-contact.html">Contact</a></li>
     </ul>
-    <a class="btn btn-gold btn-sm" href="02-find-my-event.html">Register Now</a>
+    <a class="btn btn-gold btn-sm" href="15-finals-recap.html">Finals Recap</a>
   </div>
 </header>
 
@@ -46,6 +46,7 @@ SWAP LIST (remote → local when supplied)
       <h1 style="font-size:60px">Get In <span class="gold">Touch</span></h1>
       <div class="rule"></div>
       <p class="lead">Have a question? From registration queries to sponsorship opportunities, we are happy to answer any questions you may have. Fill out the form or reach out via our contact details below and our team will be in touch with you soon.</p>
+      <p style="margin-top:16px">Keen to compete in 2027? Choose <b style="color:#131315">Register interest for 2027</b> and we'll let you know as soon as dates and locations are confirmed.</p>
       <div style="margin-top:34px;display:flex;flex-direction:column;gap:18px">
         <div class="info-tile">
           <h4 style="margin-bottom:6px">Email</h4>
@@ -67,14 +68,22 @@ SWAP LIST (remote → local when supplied)
       </div>
     </div>
 
-    <!-- [Slipstream] CF7 form (Name, Email, Message) styled by theme forms skin -->
-    <form class="form form-panel">
+    <!-- [Slipstream] CF7 form (Name, Email, Enquiry, Message) styled by theme forms skin.
+         Enquiry = CF7 select. "Register interest for 2027" is the target for every 2027
+         Register Your Interest CTA on the site: links use ?enquiry=2027#contact-form and
+         the option is preselected (CF7 dynamic select default / Contact Form 7 Dynamic Text
+         Extension, or a 3 line snippet). Route that option to a "2027 Interest" list or tag. -->
+    <form class="form form-panel" id="contact-form">
       <h3>Contact Us</h3>
       <div class="row2">
         <div><label>First name *</label><input type="text" placeholder="First"></div>
         <div><label>Last name *</label><input type="text" placeholder="Last"></div>
       </div>
       <div><label>Email *</label><input type="email" placeholder="you@email.com"></div>
+      <div>
+        <label>Enquiry *</label>
+        <select id="enquiry"><option value="general">General enquiry</option><option value="2027">Register interest for 2027</option><option value="volunteer">Volunteering</option><option value="sponsor">Sponsorship</option><option value="media">Media</option></select>
+      </div>
       <div><label>Message *</label><textarea rows="7" placeholder="How can we help?"></textarea></div>
       <div><button class="btn btn-gold" type="button">Submit</button></div>
     </form>
@@ -107,7 +116,7 @@ SWAP LIST (remote → local when supplied)
           <li><a href="09-shop.html">Shop</a></li>
         </ul>
       </div>
-      <div>
+      <div id="newsletter">
         <h4>Get On The List</h4>
         <p>Be the first to get notified of event updates, key information and exclusive opportunities.</p>
         <form class="news-form">
@@ -128,6 +137,10 @@ SWAP LIST (remote → local when supplied)
   </div>
 </footer>
 
+<script>
+/* PROTOTYPE ONLY: preselect the Enquiry option from ?enquiry= (2027 interest CTAs) */
+(function(){var m=location.search.match(/[?&]enquiry=([^&]+)/),s=document.getElementById('enquiry');if(m&&s){s.value=decodeURIComponent(m[1]);}})();
+</script>
 <script src="js/vg.js?v=7"></script>
 </body>
 </html>

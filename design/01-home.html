@@ -43,25 +43,28 @@ SWAP LIST (remote → local when supplied)
       <li><a href="09-shop.html">Shop</a></li>
       <li><a href="10-contact.html">Contact</a></li>
     </ul>
-    <a class="btn btn-gold btn-sm" href="02-find-my-event.html">Register Now</a>
+    <a class="btn btn-gold btn-sm" href="15-finals-recap.html">Finals Recap</a>
   </div>
 </header>
 
 <!-- [Slipstream] Hero: Elementor section, background video (self hosted mp4) + overlay · heading + dual buttons -->
 <section class="hero">
   <!-- Poster: drop your sourced image at assets/img/hero/home-hero-poster.jpg and it appears here -->
-  <video autoplay muted loop playsinline poster="../assets/img/hero/home-hero-poster.jpg?v=6">
-    <source src="../assets/video/hero-loop.mp4" type="video/mp4">
-  </video>
+  <!-- Post-Finals state: Finals photo (231026_VGFinals_Sunday_VFY-4) in place of the hero loop.
+       Evergreen version (restore when 2027 is live):
+       <video autoplay muted loop playsinline poster="../assets/img/hero/home-hero-poster.jpg?v=6"><source src="../assets/video/hero-loop.mp4" type="video/mp4"></video> -->
+  <img class="hero-img" src="../assets/img/finals-2026/home-hero-finals.jpg" alt="Veterans For Youth taking the boat over the cargo net at the 2026 National Finals">
   <div class="wrap">
     <div>
-      <span class="kicker">By Veterans. For Veterans.</span>
-      <h1>Your Next<br>Mission<br><span class="gold">Starts Here</span></h1>
-      <p class="hero-sub">The Veteran Games is Australia's premier military inspired team competition. Form your team of 8, take up the challenge and show the country what Veteran excellence looks like.</p>
+      <!-- Post-Finals state (from 26 Oct 2026): hero + CTAs point at the 2026 Finals recap.
+           Revert to the evergreen "Your Next Mission Starts Here" copy once 2027 events are live. -->
+      <span class="kicker">2026 National Finals · Sunshine Coast</span>
+      <h1>What A<br>Weekend.<br><span class="gold">2026 Finals</span></h1>
+      <p class="hero-sub">Congratulations to Veterans For Youth, the 2026 Veteran Games Champions. Relive two massive days at Sunshine Coast Stadium with the results, highlights and full replays.</p>
     </div>
     <div class="btn-row">
-      <a class="btn btn-gold" href="02-find-my-event.html">Find Your Next Event</a>
-      <a class="btn btn-white" href="04-our-purpose.html">Our Purpose</a>
+      <a class="btn btn-gold" href="15-finals-recap.html">See The Finals Recap</a>
+      <a class="btn btn-white" href="15-finals-recap.html#watch">Watch The Replays</a>
     </div>
     <!-- [Slipstream] Presenting sponsor lockup: Elementor text + image inline. VFC-main.png with white overlay (CSS filter). Legally required early placement -->
     <div style="display:flex;align-items:center;gap:16px;margin-top:40px">
@@ -96,10 +99,19 @@ SWAP LIST (remote → local when supplied)
 <section class="sec sec-light">
   <div class="wrap">
     <div class="sec-head">
-      <div><span class="kicker">2026 Series</span><h2>The Season So Far</h2></div>
+      <div><span class="kicker">2026 Series</span><h2>That's A Wrap</h2></div>
       <a class="btn btn-line btn-sm" href="02-find-my-event.html">See The Full Calendar</a>
     </div>
     <div class="rail">
+      <article class="card">
+        <img class="card-img" src="../assets/img/finals-2026/finals-card.jpg" alt="Veterans For Youth on the wall at the 2026 National Finals">
+        <div class="card-bd">
+          <span class="badge">Completed</span>
+          <h3>National Finals</h3>
+          <p class="meta">October 24 & 25 · Champions: Veterans For Youth</p>
+          <a class="btn btn-gold btn-sm" href="15-finals-recap.html">Event Recap</a>
+        </div>
+      </article>
       <article class="card">
         <img class="card-img" src="../assets/img/events/darwin.jpg" alt="Darwin Heats">
         <div class="card-bd">
@@ -110,19 +122,21 @@ SWAP LIST (remote → local when supplied)
         </div>
       </article>
       <article class="card">
-        <img class="card-img" src="https://veterangames.com/wp-content/uploads/2025/10/Website-Image-1-1024x892.jpg" alt="National Finals Sunshine Coast">
-        <div class="card-bd">
-          <h3>National Finals</h3>
-          <p class="meta">October 24 & 25 · Sunshine Coast Stadium QLD</p>
-          <a class="btn btn-gold btn-sm" href="11-event-info.html">Event Info</a>
-        </div>
-      </article>
-      <article class="card">
         <img class="card-img" src="../assets/img/events/UK-VG.png" alt="UK Expedition Event">
         <div class="card-bd">
+          <span class="badge">Completed</span>
           <h3>UK Expedition</h3>
           <p class="meta">July 25 · United Kingdom, with Veterans Can</p>
           <a class="btn btn-gold btn-sm" href="https://veterans-can.com/veteran-games-uk" target="_blank" rel="noopener">More Info</a>
+        </div>
+      </article>
+      <article class="card">
+        <img class="card-img" src="../assets/img/general/calling.jpg" alt="Competitors sprinting at the Veteran Games">
+        <div class="card-bd">
+          <span class="badge">Coming Soon</span>
+          <h3>2027 Series</h3>
+          <p class="meta">Dates and locations to be announced</p>
+          <a class="btn btn-gold btn-sm" href="10-contact.html?enquiry=2027#contact-form">Register Your Interest</a>
         </div>
       </article>
     </div>
@@ -298,7 +312,7 @@ SWAP LIST (remote → local when supplied)
           <li><a href="09-shop.html">Shop</a></li>
         </ul>
       </div>
-      <div>
+      <div id="newsletter">
         <h4>Get On The List</h4>
         <p>Be the first to get notified of event updates, key information and exclusive opportunities.</p>
         <form class="news-form">

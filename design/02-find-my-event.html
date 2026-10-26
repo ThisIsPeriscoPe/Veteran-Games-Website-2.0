@@ -38,7 +38,7 @@ SWAP LIST (remote → local when supplied)
       <li><a href="09-shop.html">Shop</a></li>
       <li><a href="10-contact.html">Contact</a></li>
     </ul>
-    <a class="btn btn-gold btn-sm" href="#compete">Register Now</a>
+    <a class="btn btn-gold btn-sm" href="10-contact.html?enquiry=2027#contact-form">Register Interest</a>
   </div>
 </header>
 
@@ -46,9 +46,9 @@ SWAP LIST (remote → local when supplied)
 <section class="hero hero-page">
   <img class="hero-img" src="../assets/img/hero/find-event-hero.jpg" alt="">
   <div class="wrap">
-    <span class="kicker">2026 Series Calendar</span>
+    <span class="kicker">2027 Series Calendar</span>
     <h1>Find An <span class="gold">Event</span></h1>
-    <p class="hero-sub">Compete as a team of 8 or back them from the sideline. Pick your city and lock it in.</p>
+    <p class="hero-sub">Compete as a team of 8 or back them from the sideline. The 2027 calendar is coming soon, so register your interest and be the first to know.</p>
   </div>
 </section>
 
@@ -65,31 +65,48 @@ SWAP LIST (remote → local when supplied)
       <div style="flex:1"><label>Search</label><br><input type="text" placeholder="Search events"></div>
     </div>
 
-    <!-- [Slipstream] TEC events list view · one row per tribe_events post · CTA column = approved custom arrangement -->
+    <!-- [Slipstream] TEC events list view · one row per tribe_events post · CTA column = approved custom arrangement
+         2027: ONE "Coming Soon" row until events are confirmed. No dates, venues, prices or
+         registration links. When a 2027 event is confirmed it gets its own row (as 2026 did)
+         and this row comes out. Register Your Interest → Contact form, Enquiry preset to 2027. -->
     <div class="ev-row">
-      <div class="ev-date"><span>Oct</span><b class="range">24 & 25</b><span>Sat & Sun</span></div>
+      <div class="ev-date"><span>2027</span><b style="font-size:26px">TBC</b><span>Coming Soon</span></div>
       <div>
-        <h3 style="margin:10px 0 6px">Veteran Games National Finals</h3>
-        <p class="meta">Sunshine Coast Stadium, Bokarina QLD · 25 team cap · Early bird from $100pp</p>
-        <p style="margin-top:8px">The pinnacle of the 2026 series. Teams from across Australia battle it out to become the 2026 Champions.</p>
+        <span class="badge">Coming Soon</span>
+        <h3 style="margin:10px 0 6px">The 2027 Veteran Games Series</h3>
+        <p class="meta">Heats and National Finals · Dates and locations to be announced</p>
+        <p style="margin-top:8px">The next season is on its way. Register your interest and we'll let you know as soon as the 2027 calendar is confirmed.</p>
       </div>
       <div class="ev-cta">
-        <a class="btn btn-gold btn-sm" href="https://raceroster.com/events/2026/129729/veteran-games-national-finals-2026" target="_blank" rel="noopener">Register Team</a>
-        <a class="btn btn-line btn-sm" href="https://www.eventbrite.com/e/veteran-games-national-finals-2026-tickets-1992395086337" target="_blank" rel="noopener">Spectate By Donation</a>
+        <a class="btn btn-gold btn-sm" href="10-contact.html?enquiry=2027#contact-form">Register Your Interest</a>
         <a class="btn btn-white btn-sm" href="11-event-info.html">Event Info</a>
       </div>
     </div>
 
-    <div class="ev-row">
+    <div class="ev-row past">
+      <div class="ev-date"><span>Oct</span><b class="range">24 & 25</b><span>Sat & Sun</span></div>
+      <div>
+        <span class="badge">Completed</span>
+        <h3 style="margin:10px 0 6px">Veteran Games National Finals</h3>
+        <p class="meta">Sunshine Coast Stadium, Bokarina QLD · Champions: Veterans For Youth</p>
+        <p style="margin-top:8px">11 teams, including our international competitors from the UK and USA, battled it out over two days to become the 2026 Champions.</p>
+      </div>
+      <div class="ev-cta">
+        <a class="btn btn-white btn-sm" href="15-finals-recap.html">Event Recap</a>
+        <a class="btn btn-line btn-sm" href="15-finals-recap.html#watch">Watch The Replays</a>
+      </div>
+    </div>
+
+    <div class="ev-row past">
       <div class="ev-date"><span>Jul</span><b>25</b><span>Saturday</span></div>
       <div>
+        <span class="badge">Completed</span>
         <h3 style="margin:10px 0 6px">UK Expedition Event</h3>
         <p class="meta">United Kingdom · In partnership with Veterans Can</p>
         <p style="margin-top:8px">A special expedition event marking the first international expansion of the Veteran Games.</p>
       </div>
       <div class="ev-cta">
-        <a class="btn btn-gold btn-sm" href="https://veterans-can.com/veteran-games-uk" target="_blank" rel="noopener">More Info</a>
-        <a class="btn btn-white btn-sm" href="11-event-info.html">Event Info</a>
+        <a class="btn btn-white btn-sm" href="https://veterans-can.com/veteran-games-uk" target="_blank" rel="noopener">More Info</a>
       </div>
     </div>
 
@@ -114,20 +131,24 @@ SWAP LIST (remote → local when supplied)
         <p class="meta">Gold Coast QLD · First heats of 2026, selected events open to the public</p>
       </div>
       <div class="ev-cta">
-        <a class="btn btn-white btn-sm" href="11-event-info.html">Event Recap</a>
+        <!-- No Gold Coast recap page exists (live or prototype). Build one on the 14 template
+             and add an Event Recap button here. The old button pointed at the Finals event page. -->
       </div>
     </div>
   </div>
 </section>
 
-<!-- [Slipstream] EOI CTA band: Elementor section + button -->
+<!-- [Slipstream] EOI CTA band: Elementor section + button. 2027 EOI → Contact form (Enquiry preset to 2027) -->
 <section class="cta-band cta-gold">
   <div class="wrap cta-in">
     <div>
       <span class="kicker">Not Ready To Commit?</span>
-      <h2>Register Your Interest For 2026</h2>
+      <h2>Register Your Interest For 2027</h2>
     </div>
-    <a class="btn btn-gold" href="https://veterangames.com/veterangames2026/" target="_blank" rel="noopener">2026 Expressions of Interest</a>
+    <div class="btn-row">
+      <a class="btn btn-gold" href="10-contact.html?enquiry=2027#contact-form">Register Your Interest</a>
+      <a class="btn btn-line" href="#newsletter">Get On The List</a>
+    </div>
   </div>
 </section>
 
@@ -157,7 +178,7 @@ SWAP LIST (remote → local when supplied)
           <li><a href="09-shop.html">Shop</a></li>
         </ul>
       </div>
-      <div>
+      <div id="newsletter">
         <h4>Get On The List</h4>
         <p>Be the first to get notified of event updates, key information and exclusive opportunities.</p>
         <form class="news-form">
